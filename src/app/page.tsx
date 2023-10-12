@@ -12,6 +12,7 @@ import TextField from "@mui/material/TextField";
 
 // Components
 import CaseStudyCard from "@/components/card/CaseStudyCard";
+import ResumeModal from "@/components/modal/ResumeModal";
 
 // Next
 import Link from "next/link";
@@ -152,13 +153,8 @@ export default function Home() {
                   <Typography variant="subtitle1">CASE STUDY</Typography>
                 </Button>
               </Link>
-              <Button
-                variant="outlined"
-                size="large"
-                className="rounded-none lg:px-5 lg:py-4"
-              >
-                <Typography variant="subtitle1">RESUME</Typography>
-              </Button>
+
+              <ResumeModal />
             </div>
           </div>
         </section>
