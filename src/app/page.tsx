@@ -110,10 +110,10 @@ export default function Home() {
 
   return (
     <>
-      <main className="bg-white-10 xl:m-auto xl:max-w-[1440px]">
+      <main className="bg-white-10">
         <section
           id="hero"
-          className="px-6 py-14 md:px-10 md:py-[100px] lg:px-[60px] lg:py-[120px] xl:px-[100px] xl:py-[196px]"
+          className="px-6 py-14 md:px-10 md:py-[100px] lg:px-[60px] lg:py-[120px] xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[196px]"
         >
           <div>
             {size.width && size.width < 744 ? (
@@ -142,7 +142,7 @@ export default function Home() {
               my skills to your team. ”
             </Typography>
             <div className="flex justify-center md:justify-start">
-              <Link href="#case-study">
+              <Link href="#case-study" className="no-underline">
                 <Button
                   variant="contained"
                   size="large"
@@ -164,7 +164,7 @@ export default function Home() {
 
         <section
           id="case-study"
-          className="px-6 pb-10 md:px-10 md:pb-[60px] lg:px-[60px] lg:pb-12 xl:px-[100px] xl:pb-[60px]"
+          className="px-6 pb-10 md:px-10 md:pb-[60px] lg:px-[60px] lg:pb-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:pb-[60px]"
         >
           <div className="flex flex-col gap-5 md:gap-6">
             <Link href="/replica" className="no-underline">
@@ -197,152 +197,154 @@ export default function Home() {
           </div>
         </section>
 
-        <section
-          id="contact"
-          className="md:py bg-grey-20 px-6 py-10 md:px-10 md:py-8 lg:px-[60px] lg:pb-12 xl:px-[100px] xl:pb-[60px]"
-        >
-          <Divider className="border-grey-50" />
-          <Typography variant="h4" className="my-2 text-black-80 lg:my-4">
-            Contact
-          </Typography>
-          <Divider className="mb-5 border-grey-50 md:mb-6 lg:mb-8 xl:mb-10" />
-          <div className="flex gap-6 xl:gap-[88px]">
-            <div className="basis-1/2">
-              <Typography
-                variant="body2"
-                className="mb-3 text-black-70 md:mb-4 xl:text-body-1"
-              >
-                If you would like to know more or discuss a project with me, you
-                can reach out via :
-              </Typography>
-              <Typography variant="h5" className="mb-1 text-black-70">
-                Email
-              </Typography>
-              <Typography
-                variant="body2"
-                className="mb-3 text-black-70 xl:text-body-1"
-              >
-                supattra.chansawad@gmail.com
-              </Typography>
-              <div className="mb-4">
-                <div className="me-2 inline-block min-w-[28px] md:me-4 lg:min-w-[40px]">
-                  <Link
-                    href="https://www.linkedin.com/in/supattra-chansawad/"
-                    target="_blank"
-                  >
-                    <Image
-                      alt="Supattra Chansawad - Linkedin"
-                      src="/assets/static/images/homepage/linkedin.png"
-                      width={28}
-                      height={28}
-                      layout="responsive"
-                      className=" transition-all duration-[400] hover:opacity-80 "
-                    />
-                  </Link>
-                </div>
-                <div className="inline-block min-w-[28px] lg:min-w-[40px]">
-                  <Link
-                    href="https://www.behance.net/supattrchansaw"
-                    target="_blank"
-                  >
-                    <Image
-                      alt="Supattra Chansawad - Behance"
-                      src="/assets/static/images/homepage/behance.png"
-                      width={28}
-                      height={28}
-                      layout="responsive"
-                      className="transition-all duration-[400] hover:opacity-80"
-                    />
-                  </Link>
+        <div className="bg-grey-20">
+          <section
+            id="contact"
+            className="md:py bg-grey-20 px-6 py-10 md:px-10 md:py-8 lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
+          >
+            <Divider className="border-grey-50" />
+            <Typography variant="h4" className="my-2 text-black-80 lg:my-4">
+              Contact
+            </Typography>
+            <Divider className="mb-5 border-grey-50 md:mb-6 lg:mb-8 xl:mb-10" />
+            <div className="lg:flex lg:gap-6 xl:gap-[88px]">
+              <div className="basis-1/2">
+                <Typography
+                  variant="body2"
+                  className="mb-3 text-black-70 md:mb-4 xl:text-body-1"
+                >
+                  If you would like to know more or discuss a project with me,
+                  you can reach out via :
+                </Typography>
+                <Typography variant="h5" className="mb-1 text-black-70">
+                  Email
+                </Typography>
+                <Typography
+                  variant="body2"
+                  className="mb-3 text-black-70 xl:text-body-1"
+                >
+                  supattra.chansawad@gmail.com
+                </Typography>
+                <div className="mb-4">
+                  <div className="me-2 inline-block min-w-[28px] md:me-4 lg:min-w-[40px]">
+                    <Link
+                      href="https://www.linkedin.com/in/supattra-chansawad/"
+                      target="_blank"
+                    >
+                      <Image
+                        alt="Supattra Chansawad - Linkedin"
+                        src="/assets/static/images/homepage/linkedin.png"
+                        width={28}
+                        height={28}
+                        layout="responsive"
+                        className=" transition-all duration-[400] hover:opacity-80 "
+                      />
+                    </Link>
+                  </div>
+                  <div className="inline-block min-w-[28px] lg:min-w-[40px]">
+                    <Link
+                      href="https://www.behance.net/supattrchansaw"
+                      target="_blank"
+                    >
+                      <Image
+                        alt="Supattra Chansawad - Behance"
+                        src="/assets/static/images/homepage/behance.png"
+                        width={28}
+                        height={28}
+                        layout="responsive"
+                        className="transition-all duration-[400] hover:opacity-80"
+                      />
+                    </Link>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <form
-              onSubmit={handleSubmit(onSubmit)}
-              className="flex basis-1/2 flex-col"
-            >
-              <TextField
-                id="name"
-                label="Name"
-                {...register("name")}
-                className="mb-3 md:mb-4"
-                size={size.width && size.width < 1440 ? "small" : "medium"}
-              />
-
-              <div className="mb-3 md:mb-4">
+              <form
+                onSubmit={handleSubmit(onSubmit)}
+                className="flex basis-1/2 flex-col"
+              >
                 <TextField
-                  id="email"
-                  label="Email"
-                  {...register("email", {
-                    required: true,
-                    pattern: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g,
-                  })}
+                  id="name"
+                  label="Name"
+                  {...register("name")}
+                  className="mb-3 md:mb-4"
                   size={size.width && size.width < 1440 ? "small" : "medium"}
-                  className="w-full"
                 />
-                {errors?.email?.type === "required" && (
-                  <p
-                    className="mb-0 mt-1 text-body-2"
-                    style={{ color: "#f44336" }}
-                  >
-                    This field is required.
-                  </p>
-                )}
-                {errors?.email?.type === "pattern" && (
-                  <p
-                    className="mb-0 mt-1 text-body-2"
-                    style={{ color: "#f44336" }}
-                  >
-                    Please enter a valid email.
-                  </p>
-                )}
-              </div>
 
-              <div className="mb-3 w-full md:mb-4">
-                <TextField
-                  id="message"
-                  label="Message"
-                  {...register("message", {
-                    required: true,
-                  })}
-                  multiline
-                  rows={4}
-                  className="w-full"
-                />
-                {errors?.message?.type === "required" && (
-                  <p
-                    className="mb-0 mt-1 text-body-2"
-                    style={{ color: "#f44336" }}
-                  >
-                    This field is required.
-                  </p>
-                )}
-              </div>
+                <div className="mb-3 md:mb-4">
+                  <TextField
+                    id="email"
+                    label="Email"
+                    {...register("email", {
+                      required: true,
+                      pattern: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g,
+                    })}
+                    size={size.width && size.width < 1440 ? "small" : "medium"}
+                    className="w-full"
+                  />
+                  {errors?.email?.type === "required" && (
+                    <p
+                      className="mb-0 mt-1 text-body-2"
+                      style={{ color: "#f44336" }}
+                    >
+                      This field is required.
+                    </p>
+                  )}
+                  {errors?.email?.type === "pattern" && (
+                    <p
+                      className="mb-0 mt-1 text-body-2"
+                      style={{ color: "#f44336" }}
+                    >
+                      Please enter a valid email.
+                    </p>
+                  )}
+                </div>
 
-              <Button
-                variant={isLoadingSubmitSendEmail ? "contained" : "contained"}
-                disabled={isLoadingSubmitSendEmail}
-                className="rounded-none text-body-2 font-normal lg:py-4"
-                type="submit"
-                size="large"
-              >
-                {isLoadingSubmitSendEmail ? (
-                  <>
-                    <ReactLoading
-                      type={"spinningBubbles"}
-                      color="#A0A0A0"
-                      height={22}
-                      width={22}
-                    />
-                  </>
-                ) : (
-                  <Typography variant="subtitle1">SEND MESSAGE</Typography>
-                )}
-              </Button>
-            </form>
-          </div>
-        </section>
+                <div className="mb-3 w-full md:mb-4">
+                  <TextField
+                    id="message"
+                    label="Message"
+                    {...register("message", {
+                      required: true,
+                    })}
+                    multiline
+                    rows={4}
+                    className="w-full"
+                  />
+                  {errors?.message?.type === "required" && (
+                    <p
+                      className="mb-0 mt-1 text-body-2"
+                      style={{ color: "#f44336" }}
+                    >
+                      This field is required.
+                    </p>
+                  )}
+                </div>
+
+                <Button
+                  variant={isLoadingSubmitSendEmail ? "contained" : "contained"}
+                  disabled={isLoadingSubmitSendEmail}
+                  className="rounded-none text-body-2 font-normal lg:py-4"
+                  type="submit"
+                  size="large"
+                >
+                  {isLoadingSubmitSendEmail ? (
+                    <>
+                      <ReactLoading
+                        type={"spinningBubbles"}
+                        color="#A0A0A0"
+                        height={22}
+                        width={22}
+                      />
+                    </>
+                  ) : (
+                    <Typography variant="subtitle1">SEND MESSAGE</Typography>
+                  )}
+                </Button>
+              </form>
+            </div>
+          </section>
+        </div>
       </main>
       <ToastContainer
         position="top-right"
