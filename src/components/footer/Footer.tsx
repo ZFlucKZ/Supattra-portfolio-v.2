@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <section
       id="#footer"
-      className="bg-[url('/assets/static/images/homepage/bg-footer.png')] bg-cover bg-no-repeat px-6 py-10 md:px-10 lg:px-[60px] lg:pb-12 xl:px-[100px] xl:pb-[60px] "
+      className="bg-[url('/assets/static/images/homepage/bg-footer.png')] bg-cover bg-no-repeat px-6 py-10 md:px-10 md:py-[26px] lg:px-[60px] lg:py-12 xl:px-[100px] xl:py-[60px] "
     >
       <div className="xl:m-auto xl:max-w-[1240px]">
         <div className="mb-5 flex justify-between">

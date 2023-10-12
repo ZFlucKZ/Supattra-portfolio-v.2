@@ -45,16 +45,16 @@ export default function Home() {
       reset();
       let message = data.data.message;
 
-      // toast.success(message, {
-      //   position: "top-right",
-      //   autoClose: 3000,
-      //   hideProgressBar: false,
-      //   closeOnClick: true,
-      //   pauseOnHover: true,
-      //   draggable: true,
-      //   progress: undefined,
-      //   theme: "light",
-      // });
+      toast.success(message, {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
     } else {
       let message = data.data.message;
 
@@ -93,16 +93,16 @@ export default function Home() {
     );
 
   const onSubmit: SubmitHandler<Inputs> = (data) => {
-    toast.success("Send email successfully.", {
-      position: "top-right",
-      autoClose: 3000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "light",
-    });
+    // toast.success("Send email successfully.", {
+    //   position: "top-right",
+    //   autoClose: 3000,
+    //   hideProgressBar: false,
+    //   closeOnClick: true,
+    //   pauseOnHover: true,
+    //   draggable: true,
+    //   progress: undefined,
+    //   theme: "light",
+    // });
 
     // @ts-ignore
     submitSendEmail(data);
@@ -147,7 +147,7 @@ export default function Home() {
                 <Button
                   variant="contained"
                   size="large"
-                  className="me-6 rounded-none md:me-4 lg:px-5 lg:py-4"
+                  className="me-6 rounded-none px-4 py-2 md:me-4 md:px-5 md:py-3 lg:px-5 lg:py-4 xl:px-6 xl:py-5"
                 >
                   <Typography variant="subtitle1">CASE STUDY</Typography>
                 </Button>
@@ -181,7 +181,7 @@ export default function Home() {
               <CaseStudyCard
                 title={"Co."}
                 subtitle={
-                  "An online workspace web application that enhance your collaboration and productivity"
+                  "An online workspace web application that enhance your collaboration and productivity."
                 }
                 image={"/assets/static/images/homepage/co"}
               />
@@ -190,7 +190,7 @@ export default function Home() {
               <CaseStudyCard
                 title={"Warmlight"}
                 subtitle={
-                  "A scented candle shopping application that helps users buy product effortlessly"
+                  "A scented candle shopping application that helps users buy product effortlessly."
                 }
                 image={"/assets/static/images/homepage/warmlight"}
               />
@@ -205,7 +205,7 @@ export default function Home() {
           >
             <Divider className="border-grey-50" />
             <Typography variant="h4" className="my-2 text-black-80 lg:my-4">
-              Contact
+              CONTACT
             </Typography>
             <Divider className="mb-5 border-grey-50 md:mb-6 lg:mb-8 xl:mb-10" />
             <div className="lg:flex lg:gap-6 xl:gap-[88px]">

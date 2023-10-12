@@ -34,7 +34,7 @@ export default function Navbar({ isWhite = false }: NavbarTypes) {
               </Link>
             </li>
 
-            <li className="group relative me-6 md:me-4">
+            <li className="group relative me-6 lg:me-10">
               <Link
                 href="/#case-study"
                 className={classNames(
