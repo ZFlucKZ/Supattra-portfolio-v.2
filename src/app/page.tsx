@@ -138,8 +138,9 @@ export default function Home() {
               className="mb-5 text-center text-black-70 md:mb-4 md:text-start lg:mb-8 xl:mb-10"
             >
               “ I am a UX/UI designer with a passion for solving complex
-              problems and improving human experiences. I am eager to contribute
-              my skills to your team. ”
+              problems and improving human
+              {size.width && size.width > 744 ? <br /> : null}experiences. I am
+              eager to contribute my skills to your team. ”
             </Typography>
             <div className="flex justify-center md:justify-start">
               <Link href="#case-study" className="no-underline">
@@ -166,7 +167,7 @@ export default function Home() {
           id="case-study"
           className="px-6 pb-10 md:px-10 md:pb-[60px] lg:px-[60px] lg:pb-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:pb-[60px]"
         >
-          <div className="flex flex-col gap-5 md:gap-6">
+          <div className="flex flex-col gap-5 md:gap-6 lg:gap-8 xl:gap-[60px]">
             <Link href="/replica" className="no-underline">
               <CaseStudyCard
                 title={"Replica"}
@@ -338,7 +339,12 @@ export default function Home() {
                       />
                     </>
                   ) : (
-                    <Typography variant="subtitle1">SEND MESSAGE</Typography>
+                    <Typography
+                      variant="subtitle1"
+                      className="font-normal xl:text-paragraph-2"
+                    >
+                      SEND MESSAGE
+                    </Typography>
                   )}
                 </Button>
               </form>

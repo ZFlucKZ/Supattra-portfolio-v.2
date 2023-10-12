@@ -74,10 +74,16 @@ export default function CaseStudyCard({
         />
         <Box sx={{ display: "flex", flexDirection: "column" }}>
           <CardContent sx={{ flex: "1 0 auto" }}>
-            <Typography variant="h6" className="text-black-80 md:mb-3">
+            <Typography
+              variant="h6"
+              className="mx-4 text-black-80 md:mx-6 md:mb-3 lg:mx-8 xl:mx-[60px]"
+            >
               {title}
             </Typography>
-            <Typography variant="body2" className="text-grey-60">
+            <Typography
+              variant="body2"
+              className="mx-4 text-grey-60 md:mx-6 md:mb-3 lg:mx-8 xl:mx-[60px]"
+            >
               {subtitle}
             </Typography>
           </CardContent>
