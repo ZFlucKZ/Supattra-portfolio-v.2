@@ -215,7 +215,8 @@ export default function Home() {
                   className="mb-3 text-black-70 md:mb-4 xl:text-body-1"
                 >
                   If you would like to know more or discuss a project with me,
-                  you can reach out via :
+                  you can <br />
+                  reach out via :
                 </Typography>
                 <Typography variant="h5" className="mb-1 text-black-70">
                   Email
