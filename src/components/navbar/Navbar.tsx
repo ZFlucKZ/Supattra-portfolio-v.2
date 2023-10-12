@@ -19,7 +19,7 @@ export default function Navbar({ isWhite = false }: NavbarTypes) {
           <NavbarToggle />
         </div>
       ) : (
-        <ul className="m-0 flex list-none flex-row px-[60px] pt-10">
+        <ul className="m-0 flex list-none flex-row bg-white-10 px-[60px] pt-10">
           <li className="me-auto">
             <Link href="/" className="inline-block no-underline">
               <span
