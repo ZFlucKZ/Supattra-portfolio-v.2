@@ -267,7 +267,7 @@ export default function Home() {
                 label="Name"
                 {...register("name")}
                 className="mb-3 md:mb-4"
-                size={size.width && size.width < 1440 ? "small" : "large"}
+                size={size.width && size.width < 1440 ? "small" : "medium"}
               />
 
               <div className="mb-3 md:mb-4">
@@ -278,7 +278,7 @@ export default function Home() {
                     required: true,
                     pattern: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g,
                   })}
-                  size={size.width && size.width < 1440 ? "small" : "large"}
+                  size={size.width && size.width < 1440 ? "small" : "medium"}
                   className="w-full"
                 />
                 {errors?.email?.type === "required" && (
