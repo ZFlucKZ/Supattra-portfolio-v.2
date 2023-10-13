@@ -44,8 +44,8 @@ export default function Co() {
           className="px-6 py-10 md:px-10 md:py-[80px] lg:px-[60px] lg:py-[140px] xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[172px]"
         >
           <div className="lg:flex lg:items-center">
-            <div className="mb-5 flex items-center justify-center gap-3 lg:h-min">
-              <div className="w-[88px] md:w-[120px]">
+            <div className="mb-5 flex basis-1/2 items-center justify-center gap-3 lg:h-min">
+              <div className="w-[88px] md:w-[120px] lg:w-[140px]">
                 <Image
                   alt="Co working logo"
                   src="/assets/static/images/co-working/logo.png"
@@ -63,7 +63,7 @@ export default function Co() {
             </div>
 
             <motion.div
-              className="m-auto w-[260px] max-w-[670px] md:w-[400px]"
+              className="m-auto w-[260px] max-w-[670px] basis-1/2 md:w-[400px]"
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{
@@ -554,7 +554,7 @@ export default function Co() {
                 Lesson Learned
               </Typography>
               <ul className="ms-4 mt-3 list-decimal p-0 text-justify text-grey-20 lg:mt-5">
-                <li className="mb-2 lg:mb-3">
+                <li className="mb-2 lg:mb-4">
                   User Research Plan : Planning thorough and comprehensive user
                   research plan to gain insights into the specific needs and
                   pain points of product target audience plays vital role for
