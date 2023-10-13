@@ -54,18 +54,18 @@ export default function CaseStudyCard({
             width:
               size.width && size.width < 744
                 ? 144
-                : size.width && size.width < 744
-                ? 332
                 : size.width && size.width < 1024
+                ? 332
+                : size.width && size.width < 1440
                 ? 452
                 : 620,
           }}
           image={`${image}${
             size.width && size.width < 744
               ? ""
-              : size.width && size.width < 744
-              ? "-md"
               : size.width && size.width < 1024
+              ? "-md"
+              : size.width && size.width < 1440
               ? "-lg"
               : "-xl"
           }.png`}

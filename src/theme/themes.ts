@@ -111,7 +111,7 @@ export const Theme = createTheme({
       color: "#373535",
 
       "@media (min-width:744px)": {
-        fontSize: "16px",
+        fontSize: "20px",
         fontWeight: 500,
         lineHeight: 1.5,
       },

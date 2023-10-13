@@ -44,8 +44,8 @@ export default function Co() {
           className="px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[172px]"
         >
           <div>
-            <div>
-              <div className="m-auto max-w-[75px]">
+            <div className="mb-5 flex items-center justify-center gap-3">
+              <div className="min-w-[90px] md:min-w-[120px]">
                 <Image
                   alt="Co working logo"
                   src="/assets/static/images/co-working/logo.png"
@@ -54,7 +54,8 @@ export default function Co() {
                   layout="responsive"
                 />
               </div>
-              <p className="mb-6 text-center text-body-2 font-medium text-black-70">
+              <Divider orientation="vertical" flexItem />
+              <p className="m-0 text-body-2 font-medium text-black-70 md:text-body-1">
                 A co-working space web <br />
                 application that enhances your <br />
                 collaboration and productivity
@@ -66,7 +67,7 @@ export default function Co() {
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{
-                duration: 0.2,
+                duration: 0.4,
                 delay: 0.1,
                 ease: [0, 0.71, 0.2, 1.01],
               }}
@@ -153,7 +154,7 @@ export default function Co() {
         </section>
 
         <div className="px-6 md:px-10 lg:px-[60px]  xl:m-auto xl:max-w-[1440px] xl:px-[100px]">
-          <Divider className="border-grey-50" />
+          <Divider className="border-grey-40" />
         </div>
 
         <section
@@ -176,7 +177,7 @@ export default function Co() {
         </section>
 
         <div className="px-6 md:px-10 lg:px-[60px]  xl:m-auto xl:max-w-[1440px] xl:px-[100px]">
-          <Divider className="border-grey-50" />
+          <Divider className="border-grey-40" />
         </div>
 
         <section
@@ -194,7 +195,7 @@ export default function Co() {
             cursorily explore user frustrations and challenges.
           </Typography>
 
-          <div className="m-auto mb-5 mt-2">
+          <div className="m-auto mb-5 mt-2 md:mt-3">
             <Image
               alt="Social banner"
               src="/assets/static/images/co-working/social-banner.png"
@@ -248,7 +249,7 @@ export default function Co() {
         </section>
 
         <div className="px-6 md:px-10 lg:px-[60px]  xl:m-auto xl:max-w-[1440px] xl:px-[100px]">
-          <Divider className="border-grey-50" />
+          <Divider className="border-grey-40" />
         </div>
 
         <section
@@ -267,7 +268,7 @@ export default function Co() {
             needs and pain points.
           </Typography>
 
-          <div className="m-auto mb-5 mt-2">
+          <div className="m-auto mb-5 mt-2 md:mt-3">
             <Image
               alt="Synthesize to define"
               src="/assets/static/images/co-working/synthesize.png"
@@ -289,7 +290,7 @@ export default function Co() {
             followings :
           </Typography>
 
-          <div className="m-auto mb-5 mt-2">
+          <div className="m-auto mb-5 mt-2 md:mt-3">
             <Image
               alt="User pain point"
               src="/assets/static/images/co-working/pain-point.png"
@@ -301,7 +302,7 @@ export default function Co() {
         </section>
 
         <div className="px-6 md:px-10 lg:px-[60px]  xl:m-auto xl:max-w-[1440px] xl:px-[100px]">
-          <Divider className="border-grey-50" />
+          <Divider className="border-grey-40" />
         </div>
 
         <section
@@ -313,7 +314,7 @@ export default function Co() {
           </Typography>
           <Typography variant="h2">Generating and refining ideas </Typography>
 
-          <Typography variant="h6" className="mt-3">
+          <Typography variant="h6" className="mt-3 md:mt-4">
             Idea exploration and moodboard
           </Typography>
           <Typography variant="body1" className="mt-2 text-justify">
@@ -324,7 +325,7 @@ export default function Co() {
             trend to create a user-friendly and calm atmosphere.
           </Typography>
 
-          <div className="m-auto mb-5 mt-2">
+          <div className="m-auto mb-5 mt-2 md:mt-3">
             <Image
               alt="application idea"
               src="/assets/static/images/co-working/ideate.png"
@@ -361,7 +362,7 @@ export default function Co() {
             </ul>
           </Typography>
 
-          <div className="m-auto mb-5 mt-2">
+          <div className="m-auto mb-5 mt-2 md:mt-3">
             <Image
               alt="Organizing structure"
               src="/assets/static/images/co-working/mindmap.png"
@@ -378,7 +379,7 @@ export default function Co() {
             vision.
           </Typography>
 
-          <div className="m-auto mb-5 mt-2">
+          <div className="m-auto mb-5 mt-2 md:mt-3">
             <Image
               alt="Organizing structure"
               src="/assets/static/images/co-working/lo-fi-img.png"
@@ -399,7 +400,10 @@ export default function Co() {
           <Typography variant="h2" className="text-white-10">
             Hi-fidelity UI Design
           </Typography>
-          <Typography variant="body1" className="mt-2 text-grey-20">
+          <Typography
+            variant="body1"
+            className="mt-2 text-justify text-grey-20"
+          >
             The visual design aims for simplicity and cleanliness, ensuring ease
             of comprehension and navigation through product for users. I apply
             visual aids like icons and 3D illustrations extensively to enhance
@@ -411,7 +415,10 @@ export default function Co() {
             it more suitable to their needs and reducing work-related boredom.
           </Typography>
 
-          <Typography variant="body1" className="mt-4 text-grey-20">
+          <Typography
+            variant="body1"
+            className="mt-4 text-justify text-grey-20"
+          >
             Other than video conferencing and text chat features, I created a
             team board to facilitate simultaneous collaboration to enhance
             engagement within the workspace. Users can simultaneously create
@@ -455,7 +462,7 @@ export default function Co() {
                   variant="subtitle2"
                   className="text-center text-grey-20"
                 >
-                  Home page
+                  Workspace page
                 </Typography>
                 <div className="m-auto mt-2">
                   <Image
@@ -474,7 +481,7 @@ export default function Co() {
                   variant="subtitle2"
                   className="text-center text-grey-20"
                 >
-                  Home page
+                  Feature page
                 </Typography>
                 <div className="m-auto mb-2 mt-2">
                   <Image
@@ -491,7 +498,7 @@ export default function Co() {
                   variant="subtitle2"
                   className="text-center text-grey-20"
                 >
-                  Home page
+                  Contact page
                 </Typography>
                 <div className="m-auto mb-2 mt-2">
                   <Image
@@ -508,7 +515,7 @@ export default function Co() {
                   variant="subtitle2"
                   className="text-center text-grey-20"
                 >
-                  Home page
+                  Login page
                 </Typography>
                 <div className="m-auto mt-2">
                   <Image
@@ -543,7 +550,7 @@ export default function Co() {
             <Typography variant="h2" className="text-white-10">
               Lesson Learned
             </Typography>
-            <ul className="ms-4 mt-2 list-decimal p-0 text-grey-20">
+            <ul className="ms-4 mt-2 list-decimal p-0 text-justify text-grey-20">
               <li className="mb-2">
                 User Research Plan : Planning thorough and comprehensive user
                 research plan to gain insights into the specific needs and pain

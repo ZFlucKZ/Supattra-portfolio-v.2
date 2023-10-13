@@ -15,7 +15,7 @@ const Path = (props) => (
 export const MenuToggle = ({ toggle }) => (
   <button
     onClick={toggle}
-    className="bg-transparent relative z-10 ms-auto block h-[50px] w-[50px] cursor-pointer rounded border-none bg-white-10 outline-none"
+    className="bg-transparent relative z-10 ms-auto block cursor-pointer rounded border-none bg-white-10 px-0 outline-none"
   >
     <svg width="23" height="23" viewBox="0 0 23 23">
       <Path
