@@ -83,7 +83,7 @@ export default function Home() {
       (data) => {
         // return axios.post("http://localhost:3000/api/send-email", data);
         return axios.post(
-          "https://supattra-portfolio.vercel.app/api/send-email",
+          "https://supattra-port.vercel.app/api/send-email",
           data,
         );
       },
