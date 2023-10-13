@@ -1,18 +1,23 @@
 import * as React from "react";
+
 import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import MobileStepper from "@mui/material/MobileStepper";
 import Button from "@mui/material/Button";
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
+
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
-import classNames from "classnames";
+
+import { useWindowSize } from "@uidotdev/usehooks";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 //@ts-ignore
 function SingleImageCarousel({ images }) {
+  const size = useWindowSize();
+
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = images.length;
@@ -30,7 +35,13 @@ function SingleImageCarousel({ images }) {
   };
 
   return (
-    <Box sx={{ flexGrow: 1, maxWidth: "80vw", margin: "auto" }}>
+    <Box
+      sx={{
+        flexGrow: 1,
+        maxWidth: size.width && size.width < 1440 ? "80vw" : "55vw",
+        margin: "auto",
+      }}
+    >
       <AutoPlaySwipeableViews
         axis={theme.direction === "rtl" ? "x-reverse" : "x"}
         index={activeStep}
