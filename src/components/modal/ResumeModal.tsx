@@ -8,9 +8,11 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import ClearRoundedIcon from "@mui/icons-material/ClearRounded";
 
 // @ts-ignore
 import { useSpring, animated } from "@react-spring/web";
+import classNames from "classnames";
 
 interface FadeProps {
   children: React.ReactElement;
@@ -60,15 +62,10 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: 400,
-  bgcolor: "background.paper",
-  border: "2px solid #000",
-  boxShadow: 24,
-  p: 4,
 };
 
 export default function ResumeModal() {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState<boolean>(false);
 
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -99,12 +96,18 @@ export default function ResumeModal() {
       >
         <Fade in={open}>
           <Box sx={style}>
-            <Typography id="spring-modal-title" variant="h6" component="h2">
-              Text in a modal
-            </Typography>
-            <Typography id="spring-modal-description" sx={{ mt: 2 }}>
-              Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-            </Typography>
+            <div className="relative">
+              <div className="absolute right-[2px] top-[2px] flex h-14 w-14 items-center justify-center bg-black-80">
+                <ClearRoundedIcon
+                  className=" h-9 w-9 cursor-pointer text-white-10"
+                  onClick={handleClose}
+                />
+              </div>
+              <iframe
+                src="https://drive.google.com/file/d/1P9ChPOBK2hl5_gkUffR-iZJYEbSISjqu/preview"
+                className="h-[80vh] w-[80vw]"
+              ></iframe>
+            </div>
           </Box>
         </Fade>
       </Modal>
