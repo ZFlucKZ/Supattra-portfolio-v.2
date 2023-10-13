@@ -10,6 +10,30 @@ import { motion } from "framer-motion";
 // MUI
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
+import SingleImageCarousel from "@/components/carousel/SingleImageCarousel";
+
+const images = [
+  {
+    label: "Prototype image - 1",
+    imgPath: "/assets/static/images/co-working/prototype-1.png",
+  },
+  {
+    label: "Prototype image - 2",
+    imgPath: "/assets/static/images/co-working/prototype-2.png",
+  },
+  {
+    label: "Prototype image - 3",
+    imgPath: "/assets/static/images/co-working/prototype-3.png",
+  },
+  {
+    label: "Prototype image - 4",
+    imgPath: "/assets/static/images/co-working/prototype-4.png",
+  },
+  {
+    label: "Prototype image - 5",
+    imgPath: "/assets/static/images/co-working/prototype-5.png",
+  },
+];
 
 export default function Co() {
   return (
@@ -30,7 +54,7 @@ export default function Co() {
                   layout="responsive"
                 />
               </div>
-              <p className="mb-6 text-center text-body-2 font-semibold text-black-70">
+              <p className="mb-6 text-center text-body-2 font-medium text-black-70">
                 A co-working space web <br />
                 application that enhances your <br />
                 collaboration and productivity
@@ -190,7 +214,7 @@ export default function Co() {
             co-working space. These are some of the interview questions.
           </Typography>
 
-          <Typography variant="subtitle2" className="mt-3">
+          <Typography variant="subtitle2" className="mt-4">
             Goal : To identify users frustration and find opportunity to improve
             online co-working space
           </Typography>
@@ -267,7 +291,7 @@ export default function Co() {
 
           <div className="m-auto mb-5 mt-2">
             <Image
-              alt="Synthesize to define"
+              alt="User pain point"
               src="/assets/static/images/co-working/pain-point.png"
               width={1238}
               height={504}
@@ -283,22 +307,264 @@ export default function Co() {
         <section
           id="hero"
           className="px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
-        ></section>
+        >
+          <Typography variant="subtitle1" className="text-[#66B2CC]">
+            IDEATE
+          </Typography>
+          <Typography variant="h2">Generating and refining ideas </Typography>
+
+          <Typography variant="h6" className="mt-3">
+            Idea exploration and moodboard
+          </Typography>
+          <Typography variant="body1" className="mt-2 text-justify">
+            While exploring idea of product structure and features, I focused on
+            a multi-featured platform approach, taking inspiration from Slack as
+            it provides a provident example of essential functionality. In terms
+            of visual design and navigation, I opt for a clean and minimalistic
+            trend to create a user-friendly and calm atmosphere.
+          </Typography>
+
+          <div className="m-auto mb-5 mt-2">
+            <Image
+              alt="application idea"
+              src="/assets/static/images/co-working/ideate.png"
+              width={1180}
+              height={455}
+              layout="responsive"
+            />
+          </div>
+
+          <Typography variant="body1" className="mt-6 text-justify">
+            I also conducted a competitive audit to observe and assess potential
+            of current online co-working space in the market.
+          </Typography>
+
+          <div className="mb-[48px] mt-5 h-[75vh] w-full">
+            <iframe
+              src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQNsERhWYFvpM_qR0qBcS8PEi9WAN2uLAZck_Q-cih6aVfRjNpQQMIQ1xhDnMeTOspxT3fLkkDidhl3/pubhtml?widget=true&amp;headers=false"
+              className="h-full w-full"
+            ></iframe>
+          </div>
+
+          <Typography variant="h6">
+            Organizing contents and structure
+          </Typography>
+          <Typography variant="body1" className="mt-2 text-justify">
+            After gathering and listing ideas, I started to creating information
+            architecture of webpage and working space page informed by previous
+            research and defined problem. The working space interface and
+            structure focuses on :
+            <ul className="ms-4 mt-1 list-disc p-0">
+              <li>Intuitive and user-friendly interface</li>
+              <li>Effective co-working features</li>
+              <li>Productive working atmosphere</li>
+            </ul>
+          </Typography>
+
+          <div className="m-auto mb-5 mt-2">
+            <Image
+              alt="Organizing structure"
+              src="/assets/static/images/co-working/mindmap.png"
+              width={1180}
+              height={503}
+              layout="responsive"
+            />
+          </div>
+
+          <Typography variant="body1" className="mt-2 text-justify">
+            Then I created wireframe to visualize product website and workspace
+            interface and user tasks throughout the product to ensure that the
+            wireframes were aligned with user needs and the overall product
+            vision.
+          </Typography>
+
+          <div className="m-auto mb-5 mt-2">
+            <Image
+              alt="Organizing structure"
+              src="/assets/static/images/co-working/lo-fi-img.png"
+              width={1180}
+              height={695}
+              layout="responsive"
+            />
+          </div>
+        </section>
 
         <section
-          id="hero"
-          className="px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
-        ></section>
+          id="prototype"
+          className="bg-black-80 px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
+        >
+          <Typography variant="subtitle1" className="text-[#AADFF2]">
+            PROTOTYPE
+          </Typography>
+          <Typography variant="h2" className="text-white-10">
+            Hi-fidelity UI Design
+          </Typography>
+          <Typography variant="body1" className="mt-2 text-grey-20">
+            The visual design aims for simplicity and cleanliness, ensuring ease
+            of comprehension and navigation through product for users. I apply
+            visual aids like icons and 3D illustrations extensively to enhance
+            the intuitiveness of product features. Visualization also plays a
+            crucial role in crafting a better work environment within the
+            product. I implemented scenery backgrounds along with a music player
+            to alleviate the mundane and stressful aspects of the workspace.
+            These features enable users to personalize their workspace, making
+            it more suitable to their needs and reducing work-related boredom.
+          </Typography>
+
+          <Typography variant="body1" className="mt-4 text-grey-20">
+            Other than video conferencing and text chat features, I created a
+            team board to facilitate simultaneous collaboration to enhance
+            engagement within the workspace. Users can simultaneously create
+            mind maps, attach materials such as images, files, and links to
+            board etc. Moreover users can also search for all types of materials
+            within the workspace, whether they are documents, images, or chat
+            history, which simplifies material archiving and facilitates
+            seamless transfers among team members.
+          </Typography>
+        </section>
 
         <section
-          id="hero"
-          className="px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
-        ></section>
+          id="website-design"
+          className="bg-black-70 px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
+        >
+          <Typography variant="h6" className="mb-4 text-white-10">
+            WEBSITE DESIGN
+          </Typography>
+
+          <div className="flex gap-5">
+            <div className="basis-1/2">
+              <div>
+                <Typography
+                  variant="subtitle2"
+                  className="text-center text-grey-20"
+                >
+                  Home page
+                </Typography>
+                <div className="m-auto mb-2 mt-2">
+                  <Image
+                    alt="Website Design - 1"
+                    src="/assets/static/images/co-working/design-1.png"
+                    width={550}
+                    height={1329}
+                    layout="responsive"
+                  />
+                </div>
+              </div>
+              <div>
+                <Typography
+                  variant="subtitle2"
+                  className="text-center text-grey-20"
+                >
+                  Home page
+                </Typography>
+                <div className="m-auto mt-2">
+                  <Image
+                    alt="Website Design - 2"
+                    src="/assets/static/images/co-working/design-2.png"
+                    width={550}
+                    height={668}
+                    layout="responsive"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="basis-1/2">
+              <div>
+                <Typography
+                  variant="subtitle2"
+                  className="text-center text-grey-20"
+                >
+                  Home page
+                </Typography>
+                <div className="m-auto mb-2 mt-2">
+                  <Image
+                    alt="Website Design - 3"
+                    src="/assets/static/images/co-working/design-3.png"
+                    width={550}
+                    height={1076}
+                    layout="responsive"
+                  />
+                </div>
+              </div>
+              <div>
+                <Typography
+                  variant="subtitle2"
+                  className="text-center text-grey-20"
+                >
+                  Home page
+                </Typography>
+                <div className="m-auto mb-2 mt-2">
+                  <Image
+                    alt="Website Design - 4"
+                    src="/assets/static/images/co-working/design-4.png"
+                    width={550}
+                    height={503}
+                    layout="responsive"
+                  />
+                </div>
+              </div>
+              <div>
+                <Typography
+                  variant="subtitle2"
+                  className="text-center text-grey-20"
+                >
+                  Home page
+                </Typography>
+                <div className="m-auto mt-2">
+                  <Image
+                    alt="Website Design - 5"
+                    src="/assets/static/images/co-working/design-5.png"
+                    width={550}
+                    height={394}
+                    layout="responsive"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <section
-          id="hero"
-          className="px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
-        ></section>
+          id="workspace-design"
+          className="bg-black-80 px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
+        >
+          <Typography variant="h6" className="mb-3 text-white-10">
+            WORKSPACE DESIGN
+          </Typography>
+
+          <SingleImageCarousel images={images} />
+        </section>
+
+        <section
+          id="lesson-learned"
+          className="bg-black-70 px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
+        >
+          <div>
+            <Typography variant="h2" className="text-white-10">
+              Lesson Learned
+            </Typography>
+            <ul className="ms-4 mt-2 list-decimal p-0 text-grey-20">
+              <li className="mb-2">
+                User Research Plan : Planning thorough and comprehensive user
+                research plan to gain insights into the specific needs and pain
+                points of product target audience plays vital role for product
+                designing. Sketchy planning can mislead your entire design
+                direction, resulting in design that doesn’t meet users need and
+                problem.
+              </li>
+              <li>
+                Optimization for mobile : In the context of web application
+                design, it is evident that the current market demands a focus on
+                mobile users. Therefore, prioritizing the optimization for
+                mobile devices is necessary. However, as the design contains
+                numerous details and features that may not function optimally on
+                smaller mobile screens, it becomes vital to embark on a more
+                comprehensive research and planning process for mobile design
+                optimization.
+              </li>
+            </ul>
+          </div>
+        </section>
       </main>
     </>
   );

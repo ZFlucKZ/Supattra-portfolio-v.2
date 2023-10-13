@@ -41,6 +41,7 @@ export const Theme = createTheme({
       fontSize: "20px",
       fontWeight: 500,
       lineHeight: 1.5,
+      color: "#373535",
 
       "@media (min-width:744px)": {
         fontSize: "24px",
@@ -107,6 +108,7 @@ export const Theme = createTheme({
       fontSize: "16px",
       fontWeight: 500,
       lineHeight: 1.5,
+      color: "#373535",
 
       "@media (min-width:744px)": {
         fontSize: "16px",
@@ -155,6 +157,7 @@ export const Theme = createTheme({
       fontSize: "12px",
       fontWeight: 500,
       lineHeight: 1.5,
+      color: "#373535",
 
       "@media (min-width:744px)": {
         fontSize: "16px",
@@ -179,6 +182,7 @@ export const Theme = createTheme({
       fontSize: "12px",
       fontWeight: 400,
       lineHeight: 1.5,
+      color: "#525252",
 
       "@media (min-width:744px)": {
         fontSize: "16px",
