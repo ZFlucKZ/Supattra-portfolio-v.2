@@ -41,11 +41,11 @@ export default function Co() {
       <main className="bg-white-10">
         <section
           id="hero"
-          className="px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[172px]"
+          className="px-6 py-10 md:px-10 md:py-[80px] lg:px-[60px] lg:py-[140px] xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[172px]"
         >
-          <div>
-            <div className="mb-5 flex items-center justify-center gap-3">
-              <div className="min-w-[90px] md:min-w-[120px]">
+          <div className="lg:flex lg:items-center">
+            <div className="mb-5 flex items-center justify-center gap-3 lg:h-min">
+              <div className="w-[88px] md:w-[120px]">
                 <Image
                   alt="Co working logo"
                   src="/assets/static/images/co-working/logo.png"
@@ -63,7 +63,7 @@ export default function Co() {
             </div>
 
             <motion.div
-              className="m-auto w-[80%]"
+              className="m-auto w-[260px] max-w-[670px] md:w-[400px]"
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{
@@ -79,6 +79,8 @@ export default function Co() {
                 height={448}
                 layout="responsive"
               />
+              <div className="pointer-events-none absolute left-0 top-0 h-[30vw] w-[30vw] bg-[#aedef0] opacity-[0.2] blur-3xl"></div>
+              <div className="pointer-events-none absolute right-0 top-0 h-[30vw] w-[30vw] bg-[#ffcfc1] opacity-[0.3] blur-3xl"></div>
             </motion.div>
           </div>
         </section>
@@ -98,8 +100,8 @@ export default function Co() {
                 among team members.
               </Typography>
             </div>
-            <div className="flex justify-between">
-              <div>
+            <div className="flex lg:mt-8">
+              <div className="me-8 md:me-10">
                 <Typography variant="h6">Role</Typography>
                 <ul className="mt-1 list-inside list-disc p-0">
                   <li className="">
@@ -188,14 +190,14 @@ export default function Co() {
             DISCOVER AND EMPATHIZE
           </Typography>
           <Typography variant="h2">Exploring the current issue</Typography>
-          <Typography variant="body1" className="mt-2 text-justify">
+          <Typography variant="body1" className="mt-2 text-justify lg:mt-4">
             I started a secondary research to understand characteristic of
             online co-working space by testing a number of platforms in the
             market my self and accumulating users review of each platform to
             cursorily explore user frustrations and challenges.
           </Typography>
 
-          <div className="m-auto mb-5 mt-2 md:mt-3">
+          <div className="m-auto mb-5 mt-2 md:mt-3 lg:mt-5">
             <Image
               alt="Social banner"
               src="/assets/static/images/co-working/social-banner.png"
@@ -215,7 +217,7 @@ export default function Co() {
             co-working space. These are some of the interview questions.
           </Typography>
 
-          <Typography variant="subtitle2" className="mt-4">
+          <Typography variant="subtitle2" className="mt-4 lg:mt-7">
             Goal : To identify users frustration and find opportunity to improve
             online co-working space
           </Typography>
@@ -235,7 +237,7 @@ export default function Co() {
             </li>
           </ul>
 
-          <Typography variant="body1" className="mt-2">
+          <Typography variant="body1" className="mt-2 lg:mt-6">
             You can read full user interview plan{" "}
             <Link
               href="https://docs.google.com/document/d/11kSaibyOJlJib6fkXA8lcCvkmL6AK_kUGhOIog4lAFs/edit?usp=sharing"
@@ -260,7 +262,7 @@ export default function Co() {
             DEFINE
           </Typography>
           <Typography variant="h2">Synthesize to define</Typography>
-          <Typography variant="body1" className="mt-2 text-justify">
+          <Typography variant="body1" className="mt-2 text-justify lg:mt-4">
             Upon collecting the data, I synthesize the interview findings and
             transform them into an aggregated affinity diagram. This organized
             representation aids in identifying patterns and insights from the
@@ -268,7 +270,7 @@ export default function Co() {
             needs and pain points.
           </Typography>
 
-          <div className="m-auto mb-5 mt-2 md:mt-3">
+          <div className="m-auto mb-5 mt-2 md:mt-3 lg:mt-5">
             <Image
               alt="Synthesize to define"
               src="/assets/static/images/co-working/synthesize.png"
@@ -290,7 +292,7 @@ export default function Co() {
             followings :
           </Typography>
 
-          <div className="m-auto mb-5 mt-2 md:mt-3">
+          <div className="m-auto mb-5 mt-2 md:mt-3 lg:mt-5">
             <Image
               alt="User pain point"
               src="/assets/static/images/co-working/pain-point.png"
@@ -314,7 +316,7 @@ export default function Co() {
           </Typography>
           <Typography variant="h2">Generating and refining ideas </Typography>
 
-          <Typography variant="h6" className="mt-3 md:mt-4">
+          <Typography variant="h6" className="mt-3 md:mt-4 lg:mt-5">
             Idea exploration and moodboard
           </Typography>
           <Typography variant="body1" className="mt-2 text-justify">
@@ -325,7 +327,7 @@ export default function Co() {
             trend to create a user-friendly and calm atmosphere.
           </Typography>
 
-          <div className="m-auto mb-5 mt-2 md:mt-3">
+          <div className="m-auto mb-5 mt-2 md:mt-3 lg:mt-5">
             <Image
               alt="application idea"
               src="/assets/static/images/co-working/ideate.png"
@@ -362,7 +364,7 @@ export default function Co() {
             </ul>
           </Typography>
 
-          <div className="m-auto mb-5 mt-2 md:mt-3">
+          <div className="m-auto mb-5 mt-2 md:mt-3 lg:mt-5">
             <Image
               alt="Organizing structure"
               src="/assets/static/images/co-working/mindmap.png"
@@ -379,7 +381,7 @@ export default function Co() {
             vision.
           </Typography>
 
-          <div className="m-auto mb-5 mt-2 md:mt-3">
+          <div className="m-auto mb-5 mt-2 md:mt-3 lg:mt-5">
             <Image
               alt="Organizing structure"
               src="/assets/static/images/co-working/lo-fi-img.png"
@@ -402,7 +404,7 @@ export default function Co() {
           </Typography>
           <Typography
             variant="body1"
-            className="mt-2 text-justify text-grey-20"
+            className="mt-2 text-justify text-grey-20 lg:mt-5"
           >
             The visual design aims for simplicity and cleanliness, ensuring ease
             of comprehension and navigation through product for users. I apply
@@ -417,7 +419,7 @@ export default function Co() {
 
           <Typography
             variant="body1"
-            className="mt-4 text-justify text-grey-20"
+            className="mt-4 text-justify text-grey-20 lg:mt-6"
           >
             Other than video conferencing and text chat features, I created a
             team board to facilitate simultaneous collaboration to enhance
@@ -434,11 +436,11 @@ export default function Co() {
           id="website-design"
           className="bg-black-70 px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
         >
-          <Typography variant="h6" className="mb-4 text-white-10">
+          <Typography variant="h6" className="mb-4 text-white-10 lg:mb-6">
             WEBSITE DESIGN
           </Typography>
 
-          <div className="flex gap-5">
+          <div className="flex gap-5 lg:gap-8">
             <div className="basis-1/2">
               <div>
                 <Typography
@@ -447,7 +449,7 @@ export default function Co() {
                 >
                   Home page
                 </Typography>
-                <div className="m-auto mb-2 mt-2">
+                <div className="m-auto mb-2 mt-2 lg:mb-6">
                   <Image
                     alt="Website Design - 1"
                     src="/assets/static/images/co-working/design-1.png"
@@ -483,7 +485,7 @@ export default function Co() {
                 >
                   Feature page
                 </Typography>
-                <div className="m-auto mb-2 mt-2">
+                <div className="m-auto mb-2 mt-2 lg:mb-6">
                   <Image
                     alt="Website Design - 3"
                     src="/assets/static/images/co-working/design-3.png"
@@ -500,7 +502,7 @@ export default function Co() {
                 >
                   Contact page
                 </Typography>
-                <div className="m-auto mb-2 mt-2">
+                <div className="m-auto mb-2 mt-2 lg:mb-6">
                   <Image
                     alt="Website Design - 4"
                     src="/assets/static/images/co-working/design-4.png"
@@ -535,7 +537,7 @@ export default function Co() {
           id="workspace-design"
           className="bg-black-80 px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
         >
-          <Typography variant="h6" className="mb-3 text-white-10">
+          <Typography variant="h6" className="mb-3 text-white-10 lg:mb-5">
             WORKSPACE DESIGN
           </Typography>
 
@@ -546,30 +548,41 @@ export default function Co() {
           id="lesson-learned"
           className="bg-black-70 px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
         >
-          <div>
-            <Typography variant="h2" className="text-white-10">
-              Lesson Learned
-            </Typography>
-            <ul className="ms-4 mt-2 list-decimal p-0 text-justify text-grey-20">
-              <li className="mb-2">
-                User Research Plan : Planning thorough and comprehensive user
-                research plan to gain insights into the specific needs and pain
-                points of product target audience plays vital role for product
-                designing. Sketchy planning can mislead your entire design
-                direction, resulting in design that doesn’t meet users need and
-                problem.
-              </li>
-              <li>
-                Optimization for mobile : In the context of web application
-                design, it is evident that the current market demands a focus on
-                mobile users. Therefore, prioritizing the optimization for
-                mobile devices is necessary. However, as the design contains
-                numerous details and features that may not function optimally on
-                smaller mobile screens, it becomes vital to embark on a more
-                comprehensive research and planning process for mobile design
-                optimization.
-              </li>
-            </ul>
+          <div className="flex items-center gap-14">
+            <div className="basis-2/3">
+              <Typography variant="h2" className="text-white-10">
+                Lesson Learned
+              </Typography>
+              <ul className="ms-4 mt-3 list-decimal p-0 text-justify text-grey-20 lg:mt-5">
+                <li className="mb-2 lg:mb-3">
+                  User Research Plan : Planning thorough and comprehensive user
+                  research plan to gain insights into the specific needs and
+                  pain points of product target audience plays vital role for
+                  product designing. Sketchy planning can mislead your entire
+                  design direction, resulting in design that doesn’t meet users
+                  need and problem.
+                </li>
+                <li>
+                  Optimization for mobile : In the context of web application
+                  design, it is evident that the current market demands a focus
+                  on mobile users. Therefore, prioritizing the optimization for
+                  mobile devices is necessary. However, as the design contains
+                  numerous details and features that may not function optimally
+                  on smaller mobile screens, it becomes vital to embark on a
+                  more comprehensive research and planning process for mobile
+                  design optimization.
+                </li>
+              </ul>
+            </div>
+            <div className="hidden max-w-[412px] basis-1/3 lg:block">
+              <Image
+                alt="Lesson learned"
+                src="/assets/static/images/co-working/lesson-learned-img.png"
+                width={412}
+                height={342}
+                layout="responsive"
+              />
+            </div>
           </div>
         </section>
       </main>
