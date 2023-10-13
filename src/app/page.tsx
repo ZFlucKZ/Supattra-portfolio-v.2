@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
 
 // MUI
-import { Typography } from "@mui/material";
+import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
 import TextField from "@mui/material/TextField";
@@ -197,7 +197,7 @@ export default function Home() {
         <div className="bg-grey-20">
           <section
             id="contact"
-            className="md:py bg-grey-20 px-6 py-10 md:px-10 md:py-8 lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
+            className="bg-grey-20 px-6 py-10 md:px-10 md:py-8 lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
           >
             <Divider className="border-grey-50" />
             <Typography variant="h4" className="my-2 text-black-80 lg:my-4">

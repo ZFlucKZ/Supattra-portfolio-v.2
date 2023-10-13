@@ -37,6 +37,30 @@ export const Theme = createTheme({
       },
     },
 
+    h2: {
+      fontSize: "20px",
+      fontWeight: 500,
+      lineHeight: 1.5,
+
+      "@media (min-width:744px)": {
+        fontSize: "24px",
+        fontWeight: 500,
+        lineHeight: 1.5,
+      },
+
+      "@media (min-width:1024px)": {
+        fontSize: "32px",
+        fontWeight: 600,
+        lineHeight: 1,
+      },
+
+      "@media (min-width:1440px)": {
+        fontSize: "40px",
+        fontWeight: 600,
+        lineHeight: 1,
+      },
+    },
+
     h4: {
       fontSize: "16px",
       fontWeight: 400,
@@ -80,13 +104,13 @@ export const Theme = createTheme({
     },
 
     h6: {
-      fontSize: "12px",
+      fontSize: "16px",
       fontWeight: 500,
       lineHeight: 1.5,
 
       "@media (min-width:744px)": {
         fontSize: "16px",
-        fontWeight: 400,
+        fontWeight: 500,
         lineHeight: 1.5,
       },
 
@@ -127,6 +151,30 @@ export const Theme = createTheme({
       },
     },
 
+    subtitle2: {
+      fontSize: "12px",
+      fontWeight: 500,
+      lineHeight: 1.5,
+
+      "@media (min-width:744px)": {
+        fontSize: "16px",
+        fontWeight: 500,
+        lineHeight: 1.5,
+      },
+
+      "@media (min-width:1024px)": {
+        fontSize: "20px",
+        fontWeight: 500,
+        lineHeight: 1.5,
+      },
+
+      "@media (min-width:1440px)": {
+        fontSize: "20px",
+        fontWeight: 500,
+        lineHeight: 1.5,
+      },
+    },
+
     body1: {
       fontSize: "12px",
       fontWeight: 400,
@@ -146,7 +194,7 @@ export const Theme = createTheme({
 
       "@media (min-width:1440px)": {
         fontSize: "16px",
-        fontWeight: 500,
+        fontWeight: 400,
         lineHeight: 1.5,
       },
     },

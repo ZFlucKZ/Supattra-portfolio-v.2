@@ -41,7 +41,7 @@ export default function Footer() {
                   width={28}
                   height={28}
                   layout="responsive"
-                  className="transition-all duration-[400] hover:opacity-80 lg:min-w-[32px] xl:min-w-[40px]"
+                  className="min-w-[24px] transition-all duration-[400] hover:opacity-80 md:min-w-[28px] lg:min-w-[32px] xl:min-w-[40px]"
                 />
               </Link>
               <Link
@@ -54,7 +54,7 @@ export default function Footer() {
                   width={28}
                   height={28}
                   layout="responsive"
-                  className="transition-all duration-[400] hover:opacity-80 lg:min-w-[32px] xl:min-w-[40px]"
+                  className="min-w-[24px] transition-all duration-[400] hover:opacity-80 md:min-w-[28px] lg:min-w-[32px] xl:min-w-[40px]"
                 />
               </Link>
             </div>
