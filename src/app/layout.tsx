@@ -45,7 +45,7 @@ export default function RootLayout({
             <CssBaseline />
 
             <body
-              className={`${monaSans.className} relative -z-50 bg-white-10`}
+              className={`${monaSans.className} relative -z-50 overflow-x-hidden bg-white-10`}
             >
               <Navbar />
               {children}
