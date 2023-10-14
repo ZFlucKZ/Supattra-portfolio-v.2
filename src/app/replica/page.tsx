@@ -166,11 +166,12 @@ export default function Replica() {
 
             <Typography variant="body1" className="mt-2 text-justify">
               After discovering problem and possible solution, I set the{" "}
-              <b>goal</b> of this project to be :{" "}
-              <b>
+              <span className="font-semibold">goal</span> of this project to be
+              :{" "}
+              <span className="font-semibold">
                 Improving users shopping experiences by offering alternatives
                 product
-              </b>
+              </span>
               .
             </Typography>
           </div>
@@ -195,8 +196,9 @@ export default function Replica() {
             className="mt-2 text-justify lg:mt-4 xl:mt-5"
           >
             I started the design process by conducting a{" "}
-            <b>one-on-one interview</b> of 5 people who have shopping
-            experience. Here are some of the interview questions
+            <span className="font-semibold">one-on-one interview</span> of 5
+            people who have shopping experience. Here are some of the interview
+            questions
             <ul className="ms-4 mt-1 list-disc p-0">
               <li>
                 Have you ever experienced a situation where you are unable to
@@ -251,11 +253,11 @@ export default function Replica() {
           </Typography>
           <Typography variant="body1" className="mt-2 text-justify xl:mt-3">
             The most important question of this survey is{" "}
-            <b>
+            <span className="font-semibold">
               “If there is similar product that resembles or offers comparable
               effectiveness as the product you initially want, Would you
               consider to buy the alternative product ? ”
-            </b>
+            </span>
           </Typography>
 
           <div className="mb-5 ms-10 mt-4 max-w-[220px] md:mt-4 md:max-w-[328px] lg:mt-5 xl:mb-7 xl:mt-7">
@@ -384,9 +386,9 @@ export default function Replica() {
 
           <Typography variant="body1" className="mt-2 text-justify xl:mt-5">
             After brainstorming and sketching, I decided to go with an idea of{" "}
-            <b>
+            <span className="font-semibold">
               <i>“a community-based alternatives recommender application” </i>
-            </b>{" "}
+            </span>{" "}
             to provide a more efficient and way for users to find alternatives
             products. The application allow users to rate and review
             alternatives, which would help other users make informed decisions.
@@ -415,10 +417,14 @@ export default function Replica() {
             application :
             <ul className="ms-3 mt-1 list-decimal p-0 xl:mt-2">
               <li>
-                <b>Searching for alternatives product by search feature.</b>
+                <span className="font-semibold">
+                  Searching for alternatives product by search feature.
+                </span>
               </li>
               <li>
-                <b>Searching for alternatives product by AI feature.</b>
+                <span className="font-semibold">
+                  Searching for alternatives product by AI feature.
+                </span>
               </li>
             </ul>
           </Typography>
