@@ -44,7 +44,9 @@ export default function RootLayout({
           <ThemeProvider theme={Theme}>
             <CssBaseline />
 
-            <body className={`${monaSans.className} bg-white-10`}>
+            <body
+              className={`${monaSans.className} relative -z-50 bg-white-10`}
+            >
               <Navbar />
               {children}
               <Footer />

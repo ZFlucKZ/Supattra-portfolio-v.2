@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="xl:m-auto xl:max-w-[1240px]">
         <div className="mb-5 flex justify-between">
           <div>
-            <Link href="#">
+            <Link href="/">
               <div className="max-w-[60px] md:max-w-[70px] lg:md:max-w-[80px] xl:max-w-[120px]">
                 <Image
                   alt="Supattra Chansawad logo"

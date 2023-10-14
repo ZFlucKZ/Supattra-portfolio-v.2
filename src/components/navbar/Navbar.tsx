@@ -15,7 +15,7 @@ export default function Navbar({ isWhite = false }: NavbarTypes) {
   return (
     <>
       {size.width && size.width < 745 ? (
-        <div className="relative bg-white-10 px-6 pt-6 md:px-10 md:pt-10">
+        <div className="relative bg-[transparent] px-6 pt-6 md:px-10 md:pt-10">
           <NavbarToggle />
         </div>
       ) : (
