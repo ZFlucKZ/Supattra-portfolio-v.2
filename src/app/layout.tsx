@@ -33,7 +33,7 @@ export default function RootLayout({
   const queryClient = new QueryClient();
 
   return (
-    <html lang="en" className="overflow-x-hidden scroll-smooth">
+    <html lang="en" className="relative overflow-x-hidden scroll-smooth">
       <head>
         <title>Supattra Chansawad</title>
         <link rel="icon" href="/assets/static/logo/favicon.ico" />

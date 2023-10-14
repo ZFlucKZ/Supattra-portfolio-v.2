@@ -42,7 +42,7 @@ const images = [
 export default function Replica() {
   return (
     <>
-      <main className="relative -z-10 bg-white-10">
+      <main className="relative -z-10 overflow-x-hidden bg-white-10">
         <section
           id="hero"
           className="px-6 py-[80px] md:px-10 md:py-[100px] lg:px-[60px] lg:py-[140px] xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[172px]"
