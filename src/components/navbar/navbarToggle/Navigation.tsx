@@ -12,13 +12,13 @@ const variants = {
 };
 
 //@ts-ignore
-export const Navigation = ({ toggle }) => (
+export const Navigation = ({ toggle, isWhite }) => (
   <motion.ul
     variants={variants}
     className="absolute left-1/2 top-12 z-10 -translate-x-1/2 list-none px-0"
   >
     {itemIds.map((i) => (
-      <MenuItem i={i} key={i} toggle={toggle} />
+      <MenuItem i={i} key={i} toggle={toggle} isWhite={isWhite} />
     ))}
   </motion.ul>
 );

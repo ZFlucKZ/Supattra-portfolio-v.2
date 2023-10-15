@@ -22,7 +22,7 @@ const variants = {
 };
 
 //@ts-ignore
-export const MenuItem = ({ i, toggle }) => {
+export const MenuItem = ({ i, toggle, isWhite }) => {
   return (
     <>
       <motion.li
@@ -35,7 +35,9 @@ export const MenuItem = ({ i, toggle }) => {
         <div className="group relative mb-3" onClick={toggle}>
           <Link
             href="/"
-            className="mb-1 inline-block text-body-1 font-normal leading-normal text-black-80 no-underline"
+            className={`mb-1 inline-block text-body-1 font-normal leading-normal ${
+              isWhite ? "text-white-10" : "text-black-80"
+            } no-underline`}
           >
             HOME
             <span className="absolute bottom-0 left-0 h-1 w-0 rounded bg-black-80 transition-all duration-[400ms] group-hover:w-full"></span>
@@ -53,7 +55,9 @@ export const MenuItem = ({ i, toggle }) => {
         <div className="group relative mb-3" onClick={toggle}>
           <Link
             href="/#case-study"
-            className="mb-1 inline-block text-body-1 font-normal leading-normal text-black-80 no-underline"
+            className={`mb-1 inline-block text-body-1 font-normal leading-normal ${
+              isWhite ? "text-white-10" : "text-black-80"
+            } no-underline`}
           >
             CASE STUDY
             <span className="absolute bottom-0 left-0 h-1 w-0 rounded bg-black-80 transition-all duration-[400ms] group-hover:w-full"></span>
@@ -70,7 +74,9 @@ export const MenuItem = ({ i, toggle }) => {
         <div className="group relative mb-3" onClick={toggle}>
           <Link
             href="/#contact"
-            className="mb-1 inline-block text-body-1 font-normal leading-normal text-black-80 no-underline"
+            className={`mb-1 inline-block text-body-1 font-normal leading-normal ${
+              isWhite ? "text-white-10" : "text-black-80"
+            } no-underline`}
           >
             CONTACT
             <span className="absolute bottom-0 left-0 h-1 w-0 rounded bg-black-80 transition-all duration-[400ms] group-hover:w-full"></span>

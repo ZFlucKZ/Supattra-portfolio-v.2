@@ -15,11 +15,23 @@ export default function Navbar({ isWhite = false }: NavbarTypes) {
   return (
     <>
       {size.width && size.width < 745 ? (
-        <div className="relative bg-[transparent] px-6 pt-6 md:px-10 md:pt-10">
-          <NavbarToggle />
+        <div
+          className={classNames(
+            "relative bg-[transparent] px-6 pt-6 md:px-10 md:pt-10",
+            {
+              "bg-black-80": isWhite,
+              "bg-[transparent]": !isWhite,
+            },
+          )}
+        >
+          <NavbarToggle isWhite={isWhite} />
         </div>
       ) : (
-        <div className="relative z-10 bg-[transparent]">
+        <div
+          className={`relative z-10 ${
+            isWhite ? "bg-black-80" : "bg-[transparent]"
+          }`}
+        >
           <ul className="m-auto flex max-w-[1440px] list-none flex-row  px-[60px] pt-10">
             <li className="me-auto">
               <Link href="/" className="inline-block no-underline">
@@ -46,7 +58,7 @@ export default function Navbar({ isWhite = false }: NavbarTypes) {
               </Link>
               <span
                 className={classNames(
-                  "absolute bottom-0 left-0 h-1 w-0  rounded transition-all duration-[400ms] group-hover:w-full sm:bg-black-80",
+                  "absolute bottom-0 left-0 h-1 w-0  rounded transition-all duration-[400ms] group-hover:w-full ",
                   { "bg-white-10": isWhite, "bg-black-80": !isWhite },
                 )}
               ></span>
@@ -63,7 +75,7 @@ export default function Navbar({ isWhite = false }: NavbarTypes) {
               </Link>
               <span
                 className={classNames(
-                  "absolute bottom-0 left-0 h-1 w-0  rounded transition-all duration-[400ms] group-hover:w-full sm:bg-black-80",
+                  "absolute bottom-0 left-0 h-1 w-0  rounded transition-all duration-[400ms] group-hover:w-full ",
                   { "bg-white-10": isWhite, "bg-black-80": !isWhite },
                 )}
               ></span>

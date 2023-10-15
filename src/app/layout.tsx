@@ -2,6 +2,7 @@
 
 // Next
 import localFont from "next/font/local";
+import { usePathname } from "next/navigation";
 
 // Styles
 import "./globals.css";
@@ -32,6 +33,8 @@ export default function RootLayout({
 }) {
   const queryClient = new QueryClient();
 
+  const pathname = usePathname();
+
   return (
     <html lang="en" className="relative overflow-x-hidden scroll-smooth">
       <head>
@@ -47,7 +50,7 @@ export default function RootLayout({
             <body
               className={`${monaSans.className} relative -z-50 overflow-x-hidden bg-white-10`}
             >
-              <Navbar />
+              <Navbar isWhite={pathname == "/warmlight"} />
               {children}
               <Footer />
             </body>

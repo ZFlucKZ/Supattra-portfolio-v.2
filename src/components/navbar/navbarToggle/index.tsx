@@ -32,7 +32,7 @@ const sidebar = {
   },
 };
 
-export const NavbarToggle = () => {
+export const NavbarToggle = ({ isWhite = false }: NavbarTypes) => {
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
@@ -46,13 +46,15 @@ export const NavbarToggle = () => {
       className="w-full"
     >
       <motion.div
-        className="absolute bottom-0 right-0 top-0 z-[2] h-screen w-screen bg-white-10"
+        className={`absolute bottom-0 right-0 top-0 z-[2] h-screen w-screen ${
+          isWhite ? "bg-black-80" : "bg-white-10"
+        }`}
         variants={sidebar}
       ></motion.div>
       <div className={`${isOpen ? "block" : "hidden"}`}>
-        <Navigation toggle={() => toggleOpen()} />
+        <Navigation toggle={() => toggleOpen()} isWhite={isWhite} />
       </div>
-      <MenuToggle toggle={() => toggleOpen()} />
+      <MenuToggle toggle={() => toggleOpen()} isWhite={isWhite} />
     </motion.nav>
   );
 };
