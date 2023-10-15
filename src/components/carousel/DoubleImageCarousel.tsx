@@ -38,7 +38,14 @@ function DoubleImageCarousel({ images }) {
     <Box
       sx={{
         flexGrow: 1,
-        maxWidth: size.width && size.width < 1440 ? "80vw" : "55vw",
+        maxWidth:
+          size.width && size.width < 1024
+            ? "70vw"
+            : size.width && size.width < 1440
+            ? "50vw"
+            : size.width && size.width < 1600
+            ? "50vw"
+            : "38vw",
         margin: "auto",
       }}
     >
@@ -48,12 +55,12 @@ function DoubleImageCarousel({ images }) {
         onChangeIndex={handleStepChange}
         enableMouseEvents
         autoPlay={false}
-        className="rounded-se-[30px] rounded-ss-[30px]"
+        className="rounded-se-[30px] rounded-ss-[30px] md:rounded-se-[48px] md:rounded-ss-[48px] xl:rounded-se-[68px] xl:rounded-ss-[68px]"
       >
         {/*@ts-ignore*/}
         {images.map((step, index) => (
-          <div className="flex gap-2 bg-grey-60 p-4" key={index.label}>
-            <div>
+          <div className="flex h-full gap-2 bg-grey-60 p-4" key={index.label}>
+            <div className="basis-1/2">
               {Math.abs(activeStep - index) <= 2 ? (
                 <Box
                   component="img"
@@ -61,14 +68,14 @@ function DoubleImageCarousel({ images }) {
                     height: "auto",
                     display: "block",
                     overflow: "hidden",
-                    width: `${index == 3 ? "50%" : "100%"}`,
+                    width: "100%",
                   }}
                   src={step.imgPath1}
                   alt={step.label1}
                 />
               ) : null}
             </div>
-            <div>
+            <div className="basis-1/2">
               {Math.abs(activeStep - index) <= 2 ? (
                 <Box
                   component="img"

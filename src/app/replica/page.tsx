@@ -36,6 +36,8 @@ const images = [
   {
     label1: "Prototype image - 7",
     imgPath1: "/assets/static/images/replica/prototype-7.png",
+    label2: "Prototype image - 8",
+    imgPath2: "/assets/static/images/replica/prototype-8.png",
   },
 ];
 
@@ -45,7 +47,7 @@ export default function Replica() {
       <main className="relative -z-10 bg-white-10">
         <section
           id="hero"
-          className="px-6 py-[80px] md:px-10 md:py-[100px] lg:px-[60px] lg:py-[140px] xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[172px]"
+          className="px-6 py-[80px] md:px-10 md:py-[100px] lg:px-[60px] lg:py-[168px] xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[240px]"
         >
           <div className="w-[160px] md:w-[200px] lg:w-[260px] xl:w-[348px]">
             <Image
@@ -61,7 +63,7 @@ export default function Replica() {
             <br />
             experiences by offering alternatives
           </Typography>
-          <div className="pointer-events-none absolute -right-[25%] -top-[2.5%] -z-[1] w-[320px] md:w-[200px] lg:w-[260px] xl:w-[948px]">
+          <div className="pointer-events-none absolute -right-[18%] -top-[2.5%] -z-[1] w-[360px] md:w-[480px] lg:-right-[15%] lg:-top-[3%] lg:w-[680px] xl:-right-[16%] xl:-top-[4.8%] xl:w-[948px]">
             <Image
               alt="Replica hero image"
               src="/assets/static/images/replica/hero-img.png"
@@ -164,7 +166,7 @@ export default function Replica() {
               improve their shopping experiences.
             </Typography>
 
-            <Typography variant="body1" className="mt-2 text-justify">
+            <Typography variant="body1" className="mt-3 text-justify">
               After discovering problem and possible solution, I set the{" "}
               <span className="font-semibold">goal</span> of this project to be
               :{" "}
@@ -216,8 +218,8 @@ export default function Replica() {
             </ul>
           </Typography>
 
-          <div className="m-auto mb-5 mt-2 flex flex-wrap items-center justify-center gap-2 rounded-[12px] bg-[#FFC5D1] p-5 md:mt-3 lg:mt-5 xl:mb-7 xl:mt-7">
-            <div className="min-w-[220px] max-w-[544px]">
+          <div className="m-auto mb-5 mt-2 flex flex-wrap items-center justify-center gap-2 rounded-[12px] bg-[#FFC5D1] p-5 md:mt-3 md:gap-4 md:rounded-[20px] md:py-8 lg:mt-5 xl:mb-7 xl:mt-5 xl:gap-8">
+            <div className="min-w-[220px] max-w-[544px] xl:w-[544px]">
               <Image
                 alt="Social banner"
                 src="/assets/static/images/replica/interview-1.png"
@@ -226,7 +228,7 @@ export default function Replica() {
                 layout="responsive"
               />
             </div>
-            <div className="min-w-[180px] max-w-[413px]">
+            <div className="min-w-[180px] max-w-[413px] xl:w-[413px]">
               <Image
                 alt="Social banner"
                 src="/assets/static/images/replica/interview-2.png"
@@ -260,7 +262,7 @@ export default function Replica() {
             </span>
           </Typography>
 
-          <div className="mb-5 ms-10 mt-4 max-w-[220px] md:mt-4 md:max-w-[328px] lg:mt-5 xl:mb-7 xl:mt-7">
+          <div className="mb-5 ms-10 mt-4 max-w-[220px] md:mt-5 md:max-w-[328px] lg:mt-5 xl:mb-7 xl:mt-7">
             <Image
               alt="Synthesize to define"
               src="/assets/static/images/replica/pie-chart.png"
@@ -292,17 +294,14 @@ export default function Replica() {
           <Typography variant="h2">
             Synthesize to define the problems
           </Typography>
-          <Typography
-            variant="body1"
-            className="mt-2 text-justify lg:mt-4 xl:mt-5"
-          >
+          <Typography variant="body1" className="mt-2 text-justify lg:mt-4">
             After gathering all of the data, I synthesize it to create 2
             personas, representing Jane, a user who will definitely buy
             alternatives product, and Peter, a users who is uncertain about it.
           </Typography>
 
-          <div className="m-auto mb-6 mt-3 flex flex-wrap items-center justify-center gap-2 bg-[#FCD970] p-5 md:mt-3 lg:mt-5 xl:mb-7 xl:mt-7">
-            <div className="min-w-[250px] max-w-[524px]">
+          <div className="m-auto mb-5 mt-2 flex flex-wrap items-center justify-center gap-2 bg-[#FCD970] p-5 md:mb-6 md:mt-3 md:gap-4 md:py-8 lg:mt-6 lg:flex-nowrap xl:mb-9 xl:mt-7 xl:gap-8 ">
+            <div className="min-w-[250px] max-w-[524px] xl:w-[524px]">
               <Image
                 alt="User Profile - 1"
                 src="/assets/static/images/replica/user-1.png"
@@ -311,7 +310,7 @@ export default function Replica() {
                 layout="responsive"
               />
             </div>
-            <div className="min-w-[250px] max-w-[524px]">
+            <div className="min-w-[250px] max-w-[524px] xl:w-[524px]">
               <Image
                 alt="User Profile - 2"
                 src="/assets/static/images/replica/user-2.png"
@@ -325,14 +324,14 @@ export default function Replica() {
           <Typography variant="h6">
             Exploring users tasks to strengthen empathy
           </Typography>
-          <Typography variant="body1" className="mt-2 text-justify xl:mt-5">
+          <Typography variant="body1" className="mt-2 text-justify">
             To have more understanding of users, I&apos;ve created user story
             that demonstrates their daily experiences which emphasized their
             actions and emotions.
           </Typography>
 
-          <div className="m-auto mb-5 mt-3 flex flex-wrap items-center justify-center gap-2 bg-[#AAD4FC] p-5 md:mt-3 lg:mt-5 xl:mb-7 xl:mt-7">
-            <div className="min-w-[250px] max-w-[463px]">
+          <div className="m-auto mb-5 mt-2 flex flex-wrap items-center justify-center gap-2 bg-[#AAD4FC] p-5 md:mb-6 md:mt-3 md:gap-4 md:py-8 lg:mt-5 lg:flex-nowrap xl:mb-7 xl:mt-7 xl:gap-8">
+            <div className="min-w-[250px] max-w-[463px] xl:w-[463px]">
               <Image
                 alt="User tasks - 1"
                 src="/assets/static/images/replica/user-task-1.png"
@@ -341,7 +340,7 @@ export default function Replica() {
                 layout="responsive"
               />
             </div>
-            <div className="min-w-[250px] max-w-[463px]">
+            <div className="min-w-[250px] max-w-[463px] xl:w-[463px]">
               <Image
                 alt="User tasks - 2"
                 src="/assets/static/images/replica/user-task-2.png"
@@ -353,7 +352,7 @@ export default function Replica() {
           </div>
 
           <Typography variant="h6">Prioritizing the main problem</Typography>
-          <Typography variant="body1" className="mt-2 text-justify xl:mt-5">
+          <Typography variant="body1" className="mt-2 text-justify xl:mt-3">
             During this phrase, There are several of problem statements derived
             from previously synthesized information. After listing and
             analyzing, I decided to prioritize the most common problem that
@@ -395,12 +394,15 @@ export default function Replica() {
             I also utilize AI as an extensive alternatives finding feature.
           </Typography>
 
-          <Typography variant="body1" className="mt-3 text-justify xl:mt-5">
+          <Typography
+            variant="body1"
+            className="mt-3 text-justify lg:mt-4 xl:mt-5"
+          >
             Here is the site map created by focusing on crucial actions and
             features.
           </Typography>
 
-          <div className="m-auto mb-5 mt-2 scale-[1.2] md:mt-3 lg:mt-5 xl:mb-7 xl:mt-7">
+          <div className="m-auto mb-5 mt-5 scale-[1.2] xl:mb-7 xl:mt-7 xl:scale-[1.1]">
             <Image
               alt="application idea"
               src="/assets/static/images/replica/app-plan.png"
@@ -411,7 +413,10 @@ export default function Replica() {
           </div>
 
           <Typography variant="h6">Visualizing user experience</Typography>
-          <Typography variant="body1" className="text-justify xl:mb-7 xl:mt-7">
+          <Typography
+            variant="body1"
+            className="mt-2 text-justify xl:mb-7 xl:mt-7"
+          >
             I constructed a user flow focusing on 2 main tasks on the
             application to help me visualize users action and navigation through
             application :
@@ -429,14 +434,14 @@ export default function Replica() {
             </ul>
           </Typography>
 
-          <Typography variant="body1" className="text-justify xl:mb-7 xl:mt-7">
+          <Typography variant="body1" className="mt-3 text-justify lg:mt-4">
             I also roughly created wireframe informed by user flow and site map
             for the purpose of organizing elements and achieving main tasks on
             the application.
           </Typography>
           <Typography
             variant="body1"
-            className="mt-2 text-justify xl:mb-7 xl:mt-7"
+            className="mt-2 text-justify lg:mt-4 xl:mb-7"
           >
             You can view the wireframe on{" "}
             <Link
@@ -449,7 +454,7 @@ export default function Replica() {
             .
           </Typography>
 
-          <div className="m-auto mb-5 mt-2 md:mt-3 lg:mt-5 xl:mb-7 xl:mt-7">
+          <div className="m-auto mb-5 mt-2 md:mt-4 lg:mt-5 xl:mb-7 xl:mt-7">
             <Image
               alt="Organizing structure"
               src="/assets/static/images/replica/ux-visual.png"
@@ -465,8 +470,8 @@ export default function Replica() {
             id="prototype"
             className="bg-black-80 px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
           >
-            <div className="flex flex-col gap-4">
-              <div>
+            <div className="flex flex-col gap-4 lg:flex-row lg:gap-8">
+              <div className="self-center lg:basis-1/2">
                 <Typography variant="subtitle1" className="text-[#FE95AB]">
                   PROTOTYPE
                 </Typography>
@@ -475,7 +480,7 @@ export default function Replica() {
                 </Typography>
                 <Typography
                   variant="body1"
-                  className="mt-2 text-justify text-grey-20 lg:mt-5 xl:mt-7"
+                  className="mt-2 text-justify text-grey-20 lg:mt-3 xl:mt-7"
                 >
                   The prototype aimed to be well-designed and easy-to-use app.
                   It has similar structure of regular shopping application,
@@ -494,7 +499,7 @@ export default function Replica() {
                   informed decision.
                 </Typography>
               </div>
-              <div className="h-[80vh]">
+              <div className="mt-2 h-[80vh] lg:basis-1/2">
                 <iframe
                   src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FpjQteQQk66ztOFxYC5ZbEV%2FProject-Replica%3Fpage-id%3D1%3A3%26type%3Ddesign%26node-id%3D38-1160%26viewport%3D543%2C349%2C0.31%26t%3DIxBhWMaNhWsQhzMR-1%26scaling%3Dscale-down%26mode%3Ddesign"
                   className="h-full w-full"
@@ -530,6 +535,7 @@ export default function Replica() {
               >
                 Figma
               </Link>
+              .
             </Typography>
 
             <div className="">
