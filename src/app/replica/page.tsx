@@ -83,7 +83,7 @@ export default function Replica() {
               <Typography variant="h6">Overview</Typography>
               <Typography
                 variant="body1"
-                className="mb-5 mt-1 text-justify xl:mt-3"
+                className="mb-5 mt-1 text-justify xl:mt-6"
               >
                 In some circumstance, customers may not get the exact product
                 they desired, but they can still find a solution that meets
@@ -94,7 +94,7 @@ export default function Replica() {
             <div className="flex basis-5/12 lg:mt-8 xl:mt-0">
               <div className="me-8 md:me-10 xl:me-[100px]">
                 <Typography variant="h6">Role</Typography>
-                <ul className="mt-1 list-inside list-disc p-0 xl:mt-3">
+                <ul className="mt-1 list-inside list-disc p-0 xl:mt-6">
                   <li className="">
                     <Typography variant="body1" className="inline-block">
                       User Research
@@ -119,7 +119,7 @@ export default function Replica() {
               </div>
               <div>
                 <Typography variant="h6">Tool</Typography>
-                <ul className="mt-1 list-inside list-disc p-0 xl:mt-3">
+                <ul className="mt-1 list-inside list-disc p-0 xl:mt-6">
                   <li className="">
                     <Typography variant="body1" className="inline-block">
                       Figma
@@ -156,7 +156,7 @@ export default function Replica() {
         >
           <div>
             <Typography variant="h6">Problem</Typography>
-            <Typography variant="body1" className="mt-1 text-justify xl:mt-3">
+            <Typography variant="body1" className="mt-1 text-justify xl:mt-6">
               When individuals make a decision on purchasing, various factors
               can hinder them to do so. These factors may include limited
               budget, limited retail options, and product unavailability etc.
@@ -166,7 +166,7 @@ export default function Replica() {
               improve their shopping experiences.
             </Typography>
 
-            <Typography variant="body1" className="mt-3 text-justify">
+            <Typography variant="body1" className="mt-3 text-justify xl:mt-6">
               After discovering problem and possible solution, I set the{" "}
               <span className="font-semibold">goal</span> of this project to be
               :{" "}
@@ -195,7 +195,7 @@ export default function Replica() {
           </Typography>
           <Typography
             variant="body1"
-            className="mt-2 text-justify lg:mt-4 xl:mt-5"
+            className="mt-2 text-justify lg:mt-4 xl:mt-6"
           >
             I started the design process by conducting a{" "}
             <span className="font-semibold">one-on-one interview</span> of 5
@@ -218,7 +218,7 @@ export default function Replica() {
             </ul>
           </Typography>
 
-          <div className="m-auto mb-5 mt-2 flex flex-wrap items-center justify-center gap-2 rounded-[12px] bg-[#FFC5D1] p-5 md:mt-3 md:gap-4 md:rounded-[20px] md:py-8 lg:mt-5 xl:mb-7 xl:mt-5 xl:gap-8">
+          <div className="m-auto mb-5 mt-2 flex flex-wrap items-center justify-center gap-2 rounded-[12px] bg-[#FFC5D1] p-5 md:mt-3 md:gap-4 md:rounded-[20px] md:py-8 lg:mt-5 xl:mb-[60px] xl:mt-6 xl:gap-8">
             <div className="min-w-[220px] max-w-[544px] xl:w-[544px]">
               <Image
                 alt="Social banner"
@@ -262,7 +262,7 @@ export default function Replica() {
             </span>
           </Typography>
 
-          <div className="mb-5 ms-10 mt-4 max-w-[220px] md:mt-5 md:max-w-[328px] lg:mt-5 xl:mb-7 xl:mt-7">
+          <div className="mb-5 ms-10 mt-4 max-w-[220px] md:mt-5 md:max-w-[328px] lg:mt-5 xl:mb-6 xl:mt-6">
             <Image
               alt="Synthesize to define"
               src="/assets/static/images/replica/pie-chart.png"
@@ -294,13 +294,16 @@ export default function Replica() {
           <Typography variant="h2">
             Synthesize to define the problems
           </Typography>
-          <Typography variant="body1" className="mt-2 text-justify lg:mt-4">
+          <Typography
+            variant="body1"
+            className="mt-2 text-justify lg:mt-4 xl:mt-6"
+          >
             After gathering all of the data, I synthesize it to create 2
             personas, representing Jane, a user who will definitely buy
             alternatives product, and Peter, a users who is uncertain about it.
           </Typography>
 
-          <div className="m-auto mb-5 mt-2 flex flex-wrap items-center justify-center gap-2 bg-[#FCD970] p-5 md:mb-6 md:mt-3 md:gap-4 md:py-8 lg:mt-6 lg:flex-nowrap xl:mb-9 xl:mt-7 xl:gap-8 ">
+          <div className="m-auto mb-5 mt-2 flex flex-wrap items-center justify-center gap-2 bg-[#FCD970] p-5 md:mb-6 md:mt-3 md:gap-4 md:py-8 lg:mt-6 lg:flex-nowrap xl:mb-[60px] xl:mt-6 xl:gap-8">
             <div className="min-w-[250px] max-w-[524px] xl:w-[524px]">
               <Image
                 alt="User Profile - 1"
@@ -330,7 +333,7 @@ export default function Replica() {
             actions and emotions.
           </Typography>
 
-          <div className="m-auto mb-5 mt-2 flex flex-wrap items-center justify-center gap-2 bg-[#AAD4FC] p-5 md:mb-6 md:mt-3 md:gap-4 md:py-8 lg:mt-5 lg:flex-nowrap xl:mb-7 xl:mt-7 xl:gap-8">
+          <div className="m-auto mb-5 mt-2 flex flex-wrap items-center justify-center gap-2 bg-[#AAD4FC] p-5 md:mb-6 md:mt-3 md:gap-4 md:py-8 lg:mt-5 lg:flex-nowrap xl:mb-[60px] xl:mt-6 xl:gap-8">
             <div className="min-w-[250px] max-w-[463px] xl:w-[463px]">
               <Image
                 alt="User tasks - 1"
@@ -352,14 +355,14 @@ export default function Replica() {
           </div>
 
           <Typography variant="h6">Prioritizing the main problem</Typography>
-          <Typography variant="body1" className="mt-2 text-justify xl:mt-3">
+          <Typography variant="body1" className="mt-2 text-justify xl:mt-6">
             During this phrase, There are several of problem statements derived
             from previously synthesized information. After listing and
             analyzing, I decided to prioritize the most common problem that
             majority of users encounter.
           </Typography>
 
-          <div className="m-auto mb-5 mt-2 max-w-[1050px] md:mt-3 lg:mt-5 xl:mb-7 xl:mt-7">
+          <div className="m-auto mb-5 mt-2 max-w-[1050px] md:mt-3 lg:mt-5  xl:mt-6">
             <Image
               alt="User problem"
               src="/assets/static/images/replica/problem.png"
@@ -383,7 +386,7 @@ export default function Replica() {
           </Typography>
           <Typography variant="h2">Sketching and crafting solution</Typography>
 
-          <Typography variant="body1" className="mt-2 text-justify xl:mt-5">
+          <Typography variant="body1" className="mt-2 text-justify xl:mt-6">
             After brainstorming and sketching, I decided to go with an idea of{" "}
             <span className="font-semibold">
               <i>“a community-based alternatives recommender application” </i>
@@ -396,13 +399,13 @@ export default function Replica() {
 
           <Typography
             variant="body1"
-            className="mt-3 text-justify lg:mt-4 xl:mt-5"
+            className="mt-3 text-justify lg:mt-4 xl:mt-6"
           >
             Here is the site map created by focusing on crucial actions and
             features.
           </Typography>
 
-          <div className="m-auto mb-5 mt-5 scale-[1.2] xl:mb-7 xl:mt-7 xl:scale-[1.1]">
+          <div className="m-auto mb-5 mt-5 scale-[1.2] xl:mb-[60px] xl:mt-6 xl:scale-[1.1]">
             <Image
               alt="application idea"
               src="/assets/static/images/replica/app-plan.png"
@@ -415,7 +418,7 @@ export default function Replica() {
           <Typography variant="h6">Visualizing user experience</Typography>
           <Typography
             variant="body1"
-            className="mt-2 text-justify xl:mb-7 xl:mt-7"
+            className="mt-2 text-justify xl:mb-6 xl:mt-6"
           >
             I constructed a user flow focusing on 2 main tasks on the
             application to help me visualize users action and navigation through
@@ -434,14 +437,17 @@ export default function Replica() {
             </ul>
           </Typography>
 
-          <Typography variant="body1" className="mt-3 text-justify lg:mt-4">
+          <Typography
+            variant="body1"
+            className="mt-3 text-justify lg:mt-4 xl:mt-6"
+          >
             I also roughly created wireframe informed by user flow and site map
             for the purpose of organizing elements and achieving main tasks on
             the application.
           </Typography>
           <Typography
             variant="body1"
-            className="mt-2 text-justify lg:mt-4 xl:mb-7"
+            className="mt-2 text-justify lg:mt-4 xl:mb-6"
           >
             You can view the wireframe on{" "}
             <Link
@@ -454,7 +460,7 @@ export default function Replica() {
             .
           </Typography>
 
-          <div className="m-auto mb-5 mt-2 md:mt-4 lg:mt-5 xl:mb-7 xl:mt-7">
+          <div className="m-auto mb-5 mt-2 md:mt-4 lg:mt-5 xl:mt-6">
             <Image
               alt="Organizing structure"
               src="/assets/static/images/replica/ux-visual.png"
@@ -480,7 +486,7 @@ export default function Replica() {
                 </Typography>
                 <Typography
                   variant="body1"
-                  className="mt-2 text-justify text-grey-20 lg:mt-3 xl:mt-7"
+                  className="mt-2 text-justify text-grey-20 lg:mt-3 xl:mt-3"
                 >
                   The prototype aimed to be well-designed and easy-to-use app.
                   It has similar structure of regular shopping application,
@@ -491,7 +497,7 @@ export default function Replica() {
 
                 <Typography
                   variant="body1"
-                  className="mt-3 text-justify text-grey-20 lg:mt-6 xl:mt-8"
+                  className="mt-3 text-justify text-grey-20 lg:mt-3 xl:mt-3"
                 >
                   On the product page, users can see comprehensive reviews by
                   other users and user ratings, which represent how other users

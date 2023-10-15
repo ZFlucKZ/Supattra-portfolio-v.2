@@ -79,8 +79,8 @@ export default function Co() {
                 height={448}
                 layout="responsive"
               />
-              <div className="pointer-events-none absolute left-0 top-0 h-[30vw] w-[30vw] bg-[#aedef0] opacity-[0.2] blur-3xl"></div>
-              <div className="pointer-events-none absolute right-0 top-0 h-[30vw] w-[30vw] bg-[#ffcfc1] opacity-[0.3] blur-3xl"></div>
+              <div className="pointer-events-none absolute left-0 top-0 h-[30vw] w-[30vw] bg-[#ffcfc1] opacity-[0.1] blur-3xl"></div>
+              <div className="pointer-events-none absolute right-0 top-0 h-[30vw] w-[30vw] bg-[#aedef0] opacity-[0.15] blur-3xl"></div>
             </motion.div>
           </div>
         </section>
@@ -94,7 +94,7 @@ export default function Co() {
               <Typography variant="h6">Overview</Typography>
               <Typography
                 variant="body1"
-                className="mb-5 mt-1 text-justify xl:mt-3"
+                className="mb-5 mt-1 text-justify xl:mt-6"
               >
                 Co. is a workspace web application designed based on idea aimed
                 to improve collaboration and productivity of online co-working
@@ -106,7 +106,7 @@ export default function Co() {
             <div className="flex basis-5/12 lg:mt-8 xl:mt-0">
               <div className="me-8 md:me-10 xl:me-[100px]">
                 <Typography variant="h6">Role</Typography>
-                <ul className="mt-1 list-inside list-disc p-0 xl:mt-3">
+                <ul className="mt-1 list-inside list-disc p-0 xl:mt-6">
                   <li className="">
                     <Typography variant="body1" className="inline-block">
                       User Research
@@ -131,7 +131,7 @@ export default function Co() {
               </div>
               <div>
                 <Typography variant="h6">Tool</Typography>
-                <ul className="mt-1 list-inside list-disc p-0 xl:mt-3">
+                <ul className="mt-1 list-inside list-disc p-0 xl:mt-6">
                   <li className="">
                     <Typography variant="body1" className="inline-block">
                       Figma
@@ -168,7 +168,7 @@ export default function Co() {
         >
           <div>
             <Typography variant="h6">Problem</Typography>
-            <Typography variant="body1" className="mt-1 text-justify xl:mt-3">
+            <Typography variant="body1" className="mt-1 text-justify xl:mt-6">
               The current online co-working spaces in the market doesn’t
               adequately meet customer needs. These platforms lack the essential
               features and intuitive interfaces required to enhance
@@ -195,7 +195,7 @@ export default function Co() {
           <Typography variant="h2">Exploring the current issue</Typography>
           <Typography
             variant="body1"
-            className="mt-2 text-justify lg:mt-4 xl:mt-5"
+            className="mt-2 text-justify lg:mt-4 xl:mt-6"
           >
             I started a secondary research to understand characteristic of
             online co-working space by testing a number of platforms in the
@@ -203,7 +203,7 @@ export default function Co() {
             cursorily explore user frustrations and challenges.
           </Typography>
 
-          <div className="m-auto mb-5 mt-2 md:mt-3 lg:mt-5 xl:mb-7 xl:mt-7">
+          <div className="m-auto mb-5 mt-2 md:mt-3 lg:mt-5 xl:mb-[60px] xl:mt-6">
             <Image
               alt="Social banner"
               src="/assets/static/images/co-working/social-banner.png"
@@ -216,14 +216,14 @@ export default function Co() {
           <Typography variant="h6">
             Gathering users problem and needs
           </Typography>
-          <Typography variant="body1" className="mt-2 text-justify xl:mt-3">
+          <Typography variant="body1" className="mt-2 text-justify xl:mt-6">
             I started the primary research to empathize users by conducting user
             interview through video conferencing, targeting group of 5 users,
             ranging from 23-30 years old who have experiences in using online
             co-working space. These are some of the interview questions.
           </Typography>
 
-          <Typography variant="subtitle2" className="mt-4 lg:mt-7">
+          <Typography variant="subtitle2" className="mt-4 lg:mt-6">
             Goal : To identify users frustration and find opportunity to improve
             online co-working space
           </Typography>
@@ -270,7 +270,7 @@ export default function Co() {
           <Typography variant="h2">Synthesize to define</Typography>
           <Typography
             variant="body1"
-            className="mt-2 text-justify lg:mt-4 xl:mt-5"
+            className="mt-2 text-justify lg:mt-4 xl:mt-6"
           >
             Upon collecting the data, I synthesize the interview findings and
             transform them into an aggregated affinity diagram. This organized
@@ -279,7 +279,7 @@ export default function Co() {
             needs and pain points.
           </Typography>
 
-          <div className="m-auto mb-5 mt-2 md:mt-3 lg:mt-5 xl:mb-7 xl:mt-7">
+          <div className="m-auto mb-5 mt-2 md:mt-3 lg:mt-5 xl:mb-[60px] xl:mt-6">
             <Image
               alt="Synthesize to define"
               src="/assets/static/images/co-working/synthesize.png"
@@ -292,7 +292,7 @@ export default function Co() {
           <Typography variant="h6">
             Identifying pain points and insights
           </Typography>
-          <Typography variant="body1" className="mt-2 text-justify xl:mt-5">
+          <Typography variant="body1" className="mt-2 text-justify xl:mt-6">
             After thoroughly synthesizing and analyzing the collected data, I
             decided to construct a problem statement. This effectively
             illustrates and clarifies the users pain points and insights,
@@ -301,7 +301,7 @@ export default function Co() {
             followings :
           </Typography>
 
-          <div className="m-auto mt-2 md:mt-3 lg:mt-5 xl:mt-7">
+          <div className="m-auto mt-2 md:mt-3 lg:mt-5 xl:mt-6">
             <Image
               alt="User pain point"
               src="/assets/static/images/co-working/pain-point.png"
@@ -325,10 +325,13 @@ export default function Co() {
           </Typography>
           <Typography variant="h2">Generating and refining ideas </Typography>
 
-          <Typography variant="h6" className="mt-3 md:mt-4 lg:mt-5 xl:mt-7">
+          <Typography
+            variant="h6"
+            className="mt-3 md:mt-4 lg:mt-5 xl:mt-[60px]"
+          >
             Idea exploration and moodboard
           </Typography>
-          <Typography variant="body1" className="mt-2 text-justify xl:mt-5">
+          <Typography variant="body1" className="mt-2 text-justify xl:mt-6">
             While exploring idea of product structure and features, I focused on
             a multi-featured platform approach, taking inspiration from Slack as
             it provides a provident example of essential functionality. In terms
@@ -336,7 +339,7 @@ export default function Co() {
             trend to create a user-friendly and calm atmosphere.
           </Typography>
 
-          <div className="m-auto mb-5 mt-2 md:mt-3 lg:mt-5 xl:mb-7 xl:mt-7">
+          <div className="m-auto mb-5 mt-2 md:mt-3 lg:mt-5 xl:mb-[60px] xl:mt-6">
             <Image
               alt="application idea"
               src="/assets/static/images/co-working/ideate.png"
@@ -346,10 +349,7 @@ export default function Co() {
             />
           </div>
 
-          <Typography
-            variant="body1"
-            className="mt-6 text-justify xl:mb-7 xl:mt-7"
-          >
+          <Typography variant="body1" className="mt-6 text-justify xl:mb-7">
             I also conducted a competitive audit to observe and assess potential
             of current online co-working space in the market.
           </Typography>
@@ -364,7 +364,7 @@ export default function Co() {
           <Typography variant="h6">
             Organizing contents and structure
           </Typography>
-          <Typography variant="body1" className="mt-2 text-justify xl:mt-5">
+          <Typography variant="body1" className="mt-2 text-justify xl:mt-6">
             After gathering and listing ideas, I started to creating information
             architecture of webpage and working space page informed by previous
             research and defined problem. The working space interface and
@@ -376,7 +376,7 @@ export default function Co() {
             </ul>
           </Typography>
 
-          <div className="m-auto mb-5 mt-2 md:mt-3 lg:mt-5 xl:mb-7 xl:mt-7">
+          <div className="m-auto mb-5 mt-2 md:mt-3 lg:mt-5 xl:mb-[60px] xl:mt-6">
             <Image
               alt="Organizing structure"
               src="/assets/static/images/co-working/mindmap.png"
@@ -393,7 +393,7 @@ export default function Co() {
             vision.
           </Typography>
 
-          <div className="m-auto mt-2 md:mt-3 lg:mt-5 xl:mt-7">
+          <div className="m-auto mt-2 md:mt-3 lg:mt-5 xl:mt-6">
             <Image
               alt="Organizing structure"
               src="/assets/static/images/co-working/lo-fi-img.png"
@@ -417,7 +417,7 @@ export default function Co() {
             </Typography>
             <Typography
               variant="body1"
-              className="mt-2 text-justify text-grey-20 lg:mt-5 xl:mt-7"
+              className="mt-2 text-justify text-grey-20 lg:mt-5 xl:mt-6"
             >
               The visual design aims for simplicity and cleanliness, ensuring
               ease of comprehension and navigation through product for users. I
@@ -433,7 +433,7 @@ export default function Co() {
 
             <Typography
               variant="body1"
-              className="mt-4 text-justify text-grey-20 lg:mt-6 xl:mt-8"
+              className="mt-4 text-justify text-grey-20 lg:mt-6 xl:mt-6"
             >
               Other than video conferencing and text chat features, I created a
               team board to facilitate simultaneous collaboration to enhance
@@ -464,7 +464,7 @@ export default function Co() {
                 <div>
                   <Typography
                     variant="subtitle2"
-                    className="text-center text-grey-20"
+                    className="text-center text-body-1 text-grey-20"
                   >
                     Home page
                   </Typography>
@@ -481,7 +481,7 @@ export default function Co() {
                 <div>
                   <Typography
                     variant="subtitle2"
-                    className="text-center text-grey-20"
+                    className="text-center text-body-1 text-grey-20"
                   >
                     Workspace page
                   </Typography>
@@ -500,7 +500,7 @@ export default function Co() {
                 <div>
                   <Typography
                     variant="subtitle2"
-                    className="text-center text-grey-20"
+                    className="text-center text-body-1 text-grey-20"
                   >
                     Feature page
                   </Typography>
@@ -517,7 +517,7 @@ export default function Co() {
                 <div>
                   <Typography
                     variant="subtitle2"
-                    className="text-center text-grey-20"
+                    className="text-center text-body-1 text-grey-20"
                   >
                     Contact page
                   </Typography>
@@ -534,7 +534,7 @@ export default function Co() {
                 <div>
                   <Typography
                     variant="subtitle2"
-                    className="text-center text-grey-20"
+                    className="text-center text-body-1 text-grey-20"
                   >
                     Login page
                   </Typography>
@@ -579,8 +579,8 @@ export default function Co() {
                 <Typography variant="h2" className="text-white-10">
                   Lesson Learned
                 </Typography>
-                <ul className="ms-4 mt-3 list-decimal p-0 text-justify text-grey-20 lg:mt-5">
-                  <li className="mb-2 lg:mb-4">
+                <ul className="ms-4 mt-3 list-decimal p-0 text-justify text-grey-20 lg:mt-5 xl:mt-6">
+                  <li className="mb-2 lg:mb-4 xl:mb-6">
                     User Research Plan : Planning thorough and comprehensive
                     user research plan to gain insights into the specific needs
                     and pain points of product target audience plays vital role

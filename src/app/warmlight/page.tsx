@@ -115,7 +115,7 @@ export default function Warmlight() {
               <Typography variant="h6">Overview</Typography>
               <Typography
                 variant="body1"
-                className="mb-5 mt-1 text-justify xl:mt-3"
+                className="mb-5 mt-1 text-justify xl:mt-6"
               >
                 Warmlight is a mobile shopping application for scented candle
                 buyers. The application aids users to find their most suitable
@@ -128,7 +128,7 @@ export default function Warmlight() {
             <div className="flex basis-5/12 lg:mt-8 xl:mt-0">
               <div className="me-8 md:me-10 xl:me-[100px]">
                 <Typography variant="h6">Role</Typography>
-                <ul className="mt-1 list-inside list-disc p-0 xl:mt-3">
+                <ul className="mt-1 list-inside list-disc p-0 xl:mt-6">
                   <li className="">
                     <Typography variant="body1" className="inline-block">
                       User Research
@@ -158,7 +158,7 @@ export default function Warmlight() {
               </div>
               <div>
                 <Typography variant="h6">Tool</Typography>
-                <ul className="mt-1 list-inside list-disc p-0 xl:mt-3">
+                <ul className="mt-1 list-inside list-disc p-0 xl:mt-6">
                   <li className="">
                     <Typography variant="body1" className="inline-block">
                       Figma
@@ -196,7 +196,7 @@ export default function Warmlight() {
           <div className="lg:flex lg:gap-[60px]">
             <div className="lg:basis-1/2 xl:basis-1/3">
               <Typography variant="h6">Problem</Typography>
-              <Typography variant="body1" className="mt-1 text-justify xl:mt-3">
+              <Typography variant="body1" className="mt-1 text-justify xl:mt-6">
                 Warmlight is a scented candle business who faces declining in
                 product sales. As the current limitations and challenges faced
                 by customers when purchasing scented candles, such as time
@@ -210,7 +210,7 @@ export default function Warmlight() {
               <Typography variant="h6" className="mt-5">
                 Possible Solution
               </Typography>
-              <Typography variant="body1" className="mt-1 xl:mt-3">
+              <Typography variant="body1" className="mt-1 xl:mt-6">
                 <ul className="ms-3 mt-1 list-decimal p-0 xl:mt-2">
                   <li>
                     <span className="font-semibold">Online Platform</span> :
@@ -247,19 +247,19 @@ export default function Warmlight() {
             EMPATHIZE
           </Typography>
           <Typography variant="h2">Gathering needs and insights</Typography>
-          <Typography variant="body1" className="mt-2 text-justify xl:mt-3">
+          <Typography variant="body1" className="mt-2 text-justify xl:mt-6">
             I started the empathize process by planning user interview targeting
             group of 5 users who have ever bought scented candles. These are the
             interview question that aimed to find factors contribute to or
             hinder scented candle purchasing of users.
           </Typography>
 
-          <Typography variant="subtitle2" className="mt-4 lg:mt-7">
+          <Typography variant="subtitle2" className="mt-4 lg:mt-6">
             Goal : To understand which factors contribute to or hinder scented
             candle purchasing of users
           </Typography>
 
-          <ul className="ms-4 mt-1 list-disc p-0">
+          <ul className="ms-4 mt-2 list-disc p-0 xl:mt-6">
             <li>
               Have you ever bought scented candle ? What motivates you to do so
               ?
@@ -292,7 +292,10 @@ export default function Warmlight() {
             DEFINE
           </Typography>
           <Typography variant="h2">What are the problems ?</Typography>
-          <Typography variant="body1" className="mt-2 text-justify lg:mt-4">
+          <Typography
+            variant="body1"
+            className="mt-2 text-justify lg:mt-4 xl:mt-6"
+          >
             After the interview, I am able to categorize customers into 2
             personas which are Linda, a regular customer, and Scott, a casual
             customer. We can see that regular customers concern about product
@@ -301,7 +304,7 @@ export default function Warmlight() {
             promotion.
           </Typography>
 
-          <div className="m-auto mb-5 mt-2 flex flex-wrap items-center justify-center gap-2 bg-grey-40 p-5 md:mb-6 md:mt-3 md:gap-4 md:py-8 lg:mt-6 lg:flex-nowrap xl:mb-9 xl:mt-7 xl:gap-8 ">
+          <div className="m-auto mb-5 mt-2 flex flex-wrap items-center justify-center gap-2 bg-grey-40 p-5 md:mb-6 md:mt-3 md:gap-4 md:py-8 lg:mt-6 lg:flex-nowrap xl:mt-6 xl:gap-8 ">
             <div className="min-w-[250px] max-w-[561px] md:w-[400px] lg:w-[500px] xl:w-[561px]">
               <Image
                 alt="User Profile - 1"
@@ -354,7 +357,7 @@ export default function Warmlight() {
 
           <Typography
             variant="body1"
-            className="mt-2 text-justify xl:mb-7 xl:mt-7"
+            className="mt-2 text-justify xl:mb-7 xl:mt-6"
           >
             According to gathered insight and synthesized data, this{" "}
             <span className="font-semibold">information architecture</span>{" "}
@@ -365,7 +368,7 @@ export default function Warmlight() {
             </span>{" "}
           </Typography>
 
-          <div className="m-auto mb-4 mt-5 lg:mb-5 xl:mb-7 xl:mt-7">
+          <div className="m-auto mb-4 mt-5 lg:mb-5 xl:mb-[60px] xl:mt-[60px]">
             <Image
               alt="application idea"
               src="/assets/static/images/warmlight/organize-structure.png"
@@ -379,7 +382,7 @@ export default function Warmlight() {
 
           <Typography
             variant="body1"
-            className="mt-2 text-justify xl:mb-7 xl:mt-7"
+            className="mt-2 text-justify xl:mb-7 xl:mt-6"
           >
             I created wireframe informed by information architecture to
             illustrate main key task and contents of the application. You can
@@ -387,7 +390,7 @@ export default function Warmlight() {
           </Typography>
         </section>
 
-        <div className="m-auto mb-10 mt-2 md:mb-[60px] md:mt-4 lg:mt-5 xl:mb-[60px] xl:mt-7">
+        <div className="m-auto mb-10 mt-2 md:mb-[60px] md:mt-4 lg:mb-[80px] lg:mt-5 xl:mb-[100px] xl:mt-6">
           <Image
             alt="Organizing structure"
             src="/assets/static/images/warmlight/application-banner.png"
@@ -412,7 +415,7 @@ export default function Warmlight() {
                 </Typography>
                 <Typography
                   variant="body1"
-                  className="mt-2 text-justify text-grey-20 lg:mt-3 xl:mt-7"
+                  className="mt-2 text-justify text-grey-20 lg:mt-3 xl:mt-6"
                 >
                   In high-fidelity prototype of the application, I crafted a
                   user experience that seamlessly guides customers through their
@@ -452,8 +455,8 @@ export default function Warmlight() {
                 <Typography variant="h2" className="text-white-10">
                   Lesson Learned
                 </Typography>
-                <ul className="ms-4 mt-3 list-decimal p-0 text-justify text-grey-20 lg:mt-5">
-                  <li className="mb-2 lg:mb-4">
+                <ul className="ms-4 mt-3 list-decimal p-0 text-justify text-grey-20 lg:mt-5 xl:mt-6">
+                  <li className="mb-2 lg:mb-4 xl:mb-6">
                     Machine learning personalized recommendations : After
                     finishing the case study and researching further, I found
                     out that utilizing machine learning algorithms to provide
@@ -462,7 +465,7 @@ export default function Warmlight() {
                     application. It also can significantly increases user
                     satisfaction and boosting sales.
                   </li>
-                  <li className="mb-2 lg:mb-4">
+                  <li className="mb-2 lg:mb-4 xl:mb-6">
                     Visual Consistency : Maintaining a consistent visual style
                     throughout the app, from colors and typography to icons and
                     imagery, helped build trust with users. The significance of
