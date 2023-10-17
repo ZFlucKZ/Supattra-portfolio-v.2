@@ -64,9 +64,9 @@ export default function Warmlight() {
         <div className="bg-black-80">
           <section
             id="hero"
-            className="bg-black-80 px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
+            className="bg-black-80 px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:h-[800px] xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
           >
-            <div className="lg:flex lg:items-center lg:justify-center lg:gap-[100px]">
+            <div className="lg:flex lg:items-center lg:justify-center lg:gap-[100px] xl:mt-[120px]">
               <div className="mb-3 flex basis-1/2 flex-col items-center justify-center gap-1 lg:basis-0 lg:items-start lg:gap-0">
                 <div className="w-[160px] md:w-[220px] lg:w-[300px] xl:w-[362px]">
                   <Image
@@ -113,10 +113,7 @@ export default function Warmlight() {
           <div className="xl:flex xl:gap-[100px]">
             <div className="basis-7/12">
               <Typography variant="h6">Overview</Typography>
-              <Typography
-                variant="body1"
-                className="mb-5 mt-1 text-justify xl:mt-6"
-              >
+              <Typography variant="body1" className="mb-5 mt-1  xl:mt-6">
                 Warmlight is a mobile shopping application for scented candle
                 buyers. The application aids users to find their most suitable
                 scent through features that alleviate said obstacle by giving
@@ -194,9 +191,9 @@ export default function Warmlight() {
           className="px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
         >
           <div className="lg:flex lg:gap-[60px]">
-            <div className="lg:basis-1/2 xl:basis-1/3">
+            <div className="lg:basis-1/2 xl:basis-[42%]">
               <Typography variant="h6">Problem</Typography>
-              <Typography variant="body1" className="mt-1 text-justify xl:mt-6">
+              <Typography variant="body1" className="mt-1  xl:mt-6">
                 Warmlight is a scented candle business who faces declining in
                 product sales. As the current limitations and challenges faced
                 by customers when purchasing scented candles, such as time
@@ -206,8 +203,8 @@ export default function Warmlight() {
               </Typography>
             </div>
 
-            <div className="lg:basis-1/2 xl:basis-2/3">
-              <Typography variant="h6" className="mt-5">
+            <div className="lg:basis-1/2 xl:basis-[58%]">
+              <Typography variant="h6" className="mt-5 lg:mt-0">
                 Possible Solution
               </Typography>
               <Typography variant="body1" className="mt-1 xl:mt-6">
@@ -247,7 +244,7 @@ export default function Warmlight() {
             EMPATHIZE
           </Typography>
           <Typography variant="h2">Gathering needs and insights</Typography>
-          <Typography variant="body1" className="mt-2 text-justify xl:mt-6">
+          <Typography variant="body1" className="mt-2  xl:mt-6">
             I started the empathize process by planning user interview targeting
             group of 5 users who have ever bought scented candles. These are the
             interview question that aimed to find factors contribute to or
@@ -292,10 +289,7 @@ export default function Warmlight() {
             DEFINE
           </Typography>
           <Typography variant="h2">What are the problems ?</Typography>
-          <Typography
-            variant="body1"
-            className="mt-2 text-justify lg:mt-4 xl:mt-6"
-          >
+          <Typography variant="body1" className="mt-2  lg:mt-4 xl:mt-6">
             After the interview, I am able to categorize customers into 2
             personas which are Linda, a regular customer, and Scott, a casual
             customer. We can see that regular customers concern about product
@@ -329,7 +323,7 @@ export default function Warmlight() {
         <div className="relative overflow-hidden bg-black-80">
           <section
             id="hero"
-            className=" bg-black-80 px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
+            className=" bg-black-80 px-6 py-[60px] md:px-10 md:py-[80px] lg:px-[60px] lg:py-[100px] xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[120px]"
           >
             <Typography
               variant="h2"
@@ -355,10 +349,7 @@ export default function Warmlight() {
 
           <Typography variant="h2">Sketching and crafting solution</Typography>
 
-          <Typography
-            variant="body1"
-            className="mt-2 text-justify xl:mb-7 xl:mt-6"
-          >
+          <Typography variant="body1" className="mt-2  xl:mb-7 xl:mt-6">
             According to gathered insight and synthesized data, this{" "}
             <span className="font-semibold">information architecture</span>{" "}
             focuses on main pages of the application and key tasks of customers
@@ -380,13 +371,18 @@ export default function Warmlight() {
 
           <Typography variant="h6">Organizing contents and elements</Typography>
 
-          <Typography
-            variant="body1"
-            className="mt-2 text-justify xl:mb-7 xl:mt-6"
-          >
+          <Typography variant="body1" className="mt-2  xl:mb-7 xl:mt-6">
             I created wireframe informed by information architecture to
             illustrate main key task and contents of the application. You can
-            view full wireframe on Figma.
+            view full wireframe on{" "}
+            <Link
+              href="https://www.figma.com/file/DqfXfKcQnFEjkYpQm4d5c7/Warmlight-Project?type=design&node-id=37%3A2&mode=design&t=yxXq1GOrjVKUV3UP-1"
+              target="_blank"
+              className="text-[#DB710C]"
+            >
+              Figma
+            </Link>
+            .
           </Typography>
         </section>
 
@@ -415,7 +411,7 @@ export default function Warmlight() {
                 </Typography>
                 <Typography
                   variant="body1"
-                  className="mt-2 text-justify text-grey-20 lg:mt-3 xl:mt-6"
+                  className="mt-2  text-grey-20 lg:mt-3 xl:mt-6"
                 >
                   In high-fidelity prototype of the application, I crafted a
                   user experience that seamlessly guides customers through their
@@ -455,7 +451,7 @@ export default function Warmlight() {
                 <Typography variant="h2" className="text-white-10">
                   Lesson Learned
                 </Typography>
-                <ul className="ms-4 mt-3 list-decimal p-0 text-justify text-grey-20 lg:mt-5 xl:mt-6">
+                <ul className="ms-4 mt-3 list-decimal p-0  text-grey-20 lg:mt-5 xl:mt-6">
                   <li className="mb-2 lg:mb-4 xl:mb-6">
                     Machine learning personalized recommendations : After
                     finishing the case study and researching further, I found

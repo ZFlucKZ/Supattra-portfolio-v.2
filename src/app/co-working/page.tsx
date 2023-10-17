@@ -41,10 +41,10 @@ export default function Co() {
       <main className="bg-white-10">
         <section
           id="hero"
-          className="px-6 py-10 md:px-10 md:py-[80px] lg:px-[60px] lg:py-[140px] xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[172px]"
+          className="px-6 py-10 md:px-10 md:py-[80px] lg:px-[60px] lg:py-[140px] xl:m-auto xl:h-[800px] xl:max-w-[1440px] xl:px-[100px] xl:py-[172px]"
         >
           <div className="lg:flex lg:items-center xl:gap-5">
-            <div className="mb-5 flex basis-1/2 items-center justify-center gap-3 lg:h-min lg:gap-5 xl:gap-10">
+            <div className="mb-5 flex basis-1/2 items-center justify-center gap-3 lg:h-min lg:gap-5 xl:gap-5">
               <div className="w-[88px] md:w-[120px] lg:w-[140px] xl:w-[159px]">
                 <Image
                   alt="Co working logo"
@@ -54,8 +54,12 @@ export default function Co() {
                   layout="responsive"
                 />
               </div>
-              <Divider orientation="vertical" flexItem />
-              <p className="m-0 text-body-2 font-medium text-black-70 md:text-body-1 xl:text-paragraph-2">
+              <Divider
+                orientation="vertical"
+                flexItem
+                className="border-x-[1px]"
+              />
+              <p className="m-0 text-body-2 font-semibold text-grey-60 md:text-body-1 xl:text-paragraph-2">
                 A co-working space web <br />
                 application that enhances your <br />
                 collaboration and productivity
@@ -79,8 +83,8 @@ export default function Co() {
                 height={448}
                 layout="responsive"
               />
-              <div className="pointer-events-none absolute left-0 top-0 h-[30vw] w-[30vw] bg-[#ffcfc1] opacity-[0.1] blur-3xl"></div>
-              <div className="pointer-events-none absolute right-0 top-0 h-[30vw] w-[30vw] bg-[#aedef0] opacity-[0.15] blur-3xl"></div>
+              {/* <div className="pointer-events-none absolute left-0 top-0 h-[30vw] w-[30vw] bg-[#ffcfc1] opacity-[0.1] blur-3xl"></div>
+              <div className="pointer-events-none absolute right-0 top-0 h-[30vw] w-[30vw] bg-[#aedef0] opacity-[0.15] blur-3xl"></div> */}
             </motion.div>
           </div>
         </section>
@@ -92,10 +96,7 @@ export default function Co() {
           <div className="xl:flex xl:gap-[100px]">
             <div className="basis-7/12">
               <Typography variant="h6">Overview</Typography>
-              <Typography
-                variant="body1"
-                className="mb-5 mt-1 text-justify xl:mt-6"
-              >
+              <Typography variant="body1" className="mb-5 mt-1  xl:mt-6">
                 Co. is a workspace web application designed based on idea aimed
                 to improve collaboration and productivity of online co-working
                 space. It composed of communication and productivity features
@@ -168,7 +169,7 @@ export default function Co() {
         >
           <div>
             <Typography variant="h6">Problem</Typography>
-            <Typography variant="body1" className="mt-1 text-justify xl:mt-6">
+            <Typography variant="body1" className="mt-1  xl:mt-6">
               The current online co-working spaces in the market doesn’t
               adequately meet customer needs. These platforms lack the essential
               features and intuitive interfaces required to enhance
@@ -193,10 +194,7 @@ export default function Co() {
             DISCOVER AND EMPATHIZE
           </Typography>
           <Typography variant="h2">Exploring the current issue</Typography>
-          <Typography
-            variant="body1"
-            className="mt-2 text-justify lg:mt-4 xl:mt-6"
-          >
+          <Typography variant="body1" className="mt-2  lg:mt-4 xl:mt-6">
             I started a secondary research to understand characteristic of
             online co-working space by testing a number of platforms in the
             market my self and accumulating users review of each platform to
@@ -216,7 +214,7 @@ export default function Co() {
           <Typography variant="h6">
             Gathering users problem and needs
           </Typography>
-          <Typography variant="body1" className="mt-2 text-justify xl:mt-6">
+          <Typography variant="body1" className="mt-2  xl:mt-6">
             I started the primary research to empathize users by conducting user
             interview through video conferencing, targeting group of 5 users,
             ranging from 23-30 years old who have experiences in using online
@@ -268,10 +266,7 @@ export default function Co() {
             DEFINE
           </Typography>
           <Typography variant="h2">Synthesize to define</Typography>
-          <Typography
-            variant="body1"
-            className="mt-2 text-justify lg:mt-4 xl:mt-6"
-          >
+          <Typography variant="body1" className="mt-2  lg:mt-4 xl:mt-6">
             Upon collecting the data, I synthesize the interview findings and
             transform them into an aggregated affinity diagram. This organized
             representation aids in identifying patterns and insights from the
@@ -292,7 +287,7 @@ export default function Co() {
           <Typography variant="h6">
             Identifying pain points and insights
           </Typography>
-          <Typography variant="body1" className="mt-2 text-justify xl:mt-6">
+          <Typography variant="body1" className="mt-2  xl:mt-6">
             After thoroughly synthesizing and analyzing the collected data, I
             decided to construct a problem statement. This effectively
             illustrates and clarifies the users pain points and insights,
@@ -331,7 +326,7 @@ export default function Co() {
           >
             Idea exploration and moodboard
           </Typography>
-          <Typography variant="body1" className="mt-2 text-justify xl:mt-6">
+          <Typography variant="body1" className="mt-2  xl:mt-6">
             While exploring idea of product structure and features, I focused on
             a multi-featured platform approach, taking inspiration from Slack as
             it provides a provident example of essential functionality. In terms
@@ -349,7 +344,7 @@ export default function Co() {
             />
           </div>
 
-          <Typography variant="body1" className="mt-6 text-justify xl:mb-7">
+          <Typography variant="body1" className="mt-6  xl:mb-7">
             I also conducted a competitive audit to observe and assess potential
             of current online co-working space in the market.
           </Typography>
@@ -364,7 +359,7 @@ export default function Co() {
           <Typography variant="h6">
             Organizing contents and structure
           </Typography>
-          <Typography variant="body1" className="mt-2 text-justify xl:mt-6">
+          <Typography variant="body1" className="mt-2  xl:mt-6">
             After gathering and listing ideas, I started to creating information
             architecture of webpage and working space page informed by previous
             research and defined problem. The working space interface and
@@ -386,7 +381,7 @@ export default function Co() {
             />
           </div>
 
-          <Typography variant="body1" className="mt-2 text-justify">
+          <Typography variant="body1" className="mt-2 ">
             Then I created wireframe to visualize product website and workspace
             interface and user tasks throughout the product to ensure that the
             wireframes were aligned with user needs and the overall product
@@ -407,7 +402,7 @@ export default function Co() {
         <div className="bg-black-80">
           <section
             id="prototype"
-            className="bg-black-80 px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
+            className="bg-black-80 px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-[80px] xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[100px]"
           >
             <Typography variant="subtitle1" className="text-[#AADFF2]">
               PROTOTYPE
@@ -417,7 +412,7 @@ export default function Co() {
             </Typography>
             <Typography
               variant="body1"
-              className="mt-2 text-justify text-grey-20 lg:mt-5 xl:mt-6"
+              className="mt-2  text-grey-20 lg:mt-5 xl:mt-6"
             >
               The visual design aims for simplicity and cleanliness, ensuring
               ease of comprehension and navigation through product for users. I
@@ -433,7 +428,7 @@ export default function Co() {
 
             <Typography
               variant="body1"
-              className="mt-4 text-justify text-grey-20 lg:mt-6 xl:mt-6"
+              className="mt-4  text-grey-20 lg:mt-6 xl:mt-6"
             >
               Other than video conferencing and text chat features, I created a
               team board to facilitate simultaneous collaboration to enhance
@@ -579,14 +574,14 @@ export default function Co() {
                 <Typography variant="h2" className="text-white-10">
                   Lesson Learned
                 </Typography>
-                <ul className="ms-4 mt-3 list-decimal p-0 text-justify text-grey-20 lg:mt-5 xl:mt-6">
+                <ul className="ms-4 mt-3 list-decimal p-0  text-grey-20 lg:mt-5 xl:mt-6">
                   <li className="mb-2 lg:mb-4 xl:mb-6">
                     User Research Plan : Planning thorough and comprehensive
                     user research plan to gain insights into the specific needs
                     and pain points of product target audience plays vital role
                     for product designing. Sketchy planning can mislead your
                     entire design direction, resulting in design that doesn’t
-                    meet users need and problem.
+                    meet users need <br/>and problem.
                   </li>
                   <li>
                     Optimization for mobile : In the context of web application

@@ -12,7 +12,7 @@ import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 
 // Component
-import DoubleImageCarousel from "@/components/carousel/DoubleImageCarousel";
+import QuadImageCarousel from "@/components/carousel/QuadImageCarousel";
 
 const images = [
   {
@@ -20,24 +20,20 @@ const images = [
     imgPath1: "/assets/static/images/replica/prototype-1.png",
     label2: "Prototype image - 2",
     imgPath2: "/assets/static/images/replica/prototype-2.png",
-  },
-  {
-    label1: "Prototype image - 3",
-    imgPath1: "/assets/static/images/replica/prototype-3.png",
-    label2: "Prototype image - 4",
-    imgPath2: "/assets/static/images/replica/prototype-4.png",
+    label3: "Prototype image - 3",
+    imgPath3: "/assets/static/images/replica/prototype-3.png",
+    label4: "Prototype image - 4",
+    imgPath4: "/assets/static/images/replica/prototype-4.png",
   },
   {
     label1: "Prototype image - 5",
     imgPath1: "/assets/static/images/replica/prototype-5.png",
     label2: "Prototype image - 6",
     imgPath2: "/assets/static/images/replica/prototype-6.png",
-  },
-  {
-    label1: "Prototype image - 7",
-    imgPath1: "/assets/static/images/replica/prototype-7.png",
-    label2: "Prototype image - 8",
-    imgPath2: "/assets/static/images/replica/prototype-8.png",
+    label3: "Prototype image - 7",
+    imgPath3: "/assets/static/images/replica/prototype-7.png",
+    label4: "Prototype image - 8",
+    imgPath4: "/assets/static/images/replica/prototype-8.png",
   },
 ];
 
@@ -47,7 +43,7 @@ export default function Replica() {
       <main className="relative -z-10 bg-white-10">
         <section
           id="hero"
-          className="px-6 py-[80px] md:px-10 md:py-[100px] lg:px-[60px] lg:py-[168px] xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[240px]"
+          className="px-6 py-[80px] md:px-10 md:py-[100px] lg:px-[60px] lg:py-[168px] xl:m-auto xl:h-[800px] xl:max-w-[1440px] xl:px-[100px] xl:py-[240px]"
         >
           <div className="w-[160px] md:w-[200px] lg:w-[260px] xl:w-[348px]">
             <Image
@@ -58,12 +54,15 @@ export default function Replica() {
               layout="responsive"
             />
           </div>
-          <Typography variant="body1" className="mt-1">
+          <Typography
+            variant="body1"
+            className="font-lato mt-1 font-bold text-grey-60 xl:mt-2 xl:text-[22px]"
+          >
             An application that improves users shopping
             <br />
             experiences by offering alternatives
           </Typography>
-          <div className="pointer-events-none absolute -right-[18%] -top-[2.5%] -z-[1] w-[360px] md:w-[480px] lg:-right-[15%] lg:-top-[3%] lg:w-[680px] xl:-right-[16%] xl:-top-[4.8%] xl:w-[948px]">
+          <div className="pointer-events-none absolute -right-[18%] -top-[2.5%] -z-[1] w-[360px] md:w-[480px] lg:-right-[15%] lg:-top-[3%] lg:w-[680px] xl:-right-[14%] xl:-top-[4%] xl:w-[948px]">
             <Image
               alt="Replica hero image"
               src="/assets/static/images/replica/hero-img.png"
@@ -81,10 +80,7 @@ export default function Replica() {
           <div className="xl:flex xl:gap-[100px]">
             <div className="basis-7/12">
               <Typography variant="h6">Overview</Typography>
-              <Typography
-                variant="body1"
-                className="mb-5 mt-1 text-justify xl:mt-6"
-              >
+              <Typography variant="body1" className="mb-5 mt-1  xl:mt-6">
                 In some circumstance, customers may not get the exact product
                 they desired, but they can still find a solution that meets
                 their needs. Replica, the alternatives recommender application
@@ -156,7 +152,7 @@ export default function Replica() {
         >
           <div>
             <Typography variant="h6">Problem</Typography>
-            <Typography variant="body1" className="mt-1 text-justify xl:mt-6">
+            <Typography variant="body1" className="mt-1  xl:mt-6">
               When individuals make a decision on purchasing, various factors
               can hinder them to do so. These factors may include limited
               budget, limited retail options, and product unavailability etc.
@@ -166,7 +162,7 @@ export default function Replica() {
               improve their shopping experiences.
             </Typography>
 
-            <Typography variant="body1" className="mt-3 text-justify xl:mt-6">
+            <Typography variant="body1" className="mt-3  xl:mt-6">
               After discovering problem and possible solution, I set the{" "}
               <span className="font-semibold">goal</span> of this project to be
               :{" "}
@@ -193,10 +189,7 @@ export default function Replica() {
           <Typography variant="h2">
             Gathering my audiences insights and needs
           </Typography>
-          <Typography
-            variant="body1"
-            className="mt-2 text-justify lg:mt-4 xl:mt-6"
-          >
+          <Typography variant="body1" className="mt-2  lg:mt-4 xl:mt-6">
             I started the design process by conducting a{" "}
             <span className="font-semibold">one-on-one interview</span> of 5
             people who have shopping experience. Here are some of the interview
@@ -239,7 +232,7 @@ export default function Replica() {
             </div>
           </div>
 
-          <Typography variant="body1" className="mt-2 text-justify xl:mt-3">
+          <Typography variant="body1" className="mt-2  xl:mt-3">
             I also conducted a survey by share it to my friends, family and
             colleagues. You can check out the entire survey{" "}
             <Link
@@ -253,7 +246,7 @@ export default function Replica() {
             </Link>
             .
           </Typography>
-          <Typography variant="body1" className="mt-2 text-justify xl:mt-3">
+          <Typography variant="body1" className="mt-2  xl:mt-3">
             The most important question of this survey is{" "}
             <span className="font-semibold">
               “If there is similar product that resembles or offers comparable
@@ -294,10 +287,7 @@ export default function Replica() {
           <Typography variant="h2">
             Synthesize to define the problems
           </Typography>
-          <Typography
-            variant="body1"
-            className="mt-2 text-justify lg:mt-4 xl:mt-6"
-          >
+          <Typography variant="body1" className="mt-2  lg:mt-4 xl:mt-6">
             After gathering all of the data, I synthesize it to create 2
             personas, representing Jane, a user who will definitely buy
             alternatives product, and Peter, a users who is uncertain about it.
@@ -327,7 +317,7 @@ export default function Replica() {
           <Typography variant="h6">
             Exploring users tasks to strengthen empathy
           </Typography>
-          <Typography variant="body1" className="mt-2 text-justify">
+          <Typography variant="body1" className="mt-2 ">
             To have more understanding of users, I&apos;ve created user story
             that demonstrates their daily experiences which emphasized their
             actions and emotions.
@@ -355,7 +345,7 @@ export default function Replica() {
           </div>
 
           <Typography variant="h6">Prioritizing the main problem</Typography>
-          <Typography variant="body1" className="mt-2 text-justify xl:mt-6">
+          <Typography variant="body1" className="mt-2  xl:mt-6">
             During this phrase, There are several of problem statements derived
             from previously synthesized information. After listing and
             analyzing, I decided to prioritize the most common problem that
@@ -386,7 +376,7 @@ export default function Replica() {
           </Typography>
           <Typography variant="h2">Sketching and crafting solution</Typography>
 
-          <Typography variant="body1" className="mt-2 text-justify xl:mt-6">
+          <Typography variant="body1" className="mt-2  xl:mt-6">
             After brainstorming and sketching, I decided to go with an idea of{" "}
             <span className="font-semibold">
               <i>“a community-based alternatives recommender application” </i>
@@ -397,10 +387,7 @@ export default function Replica() {
             I also utilize AI as an extensive alternatives finding feature.
           </Typography>
 
-          <Typography
-            variant="body1"
-            className="mt-3 text-justify lg:mt-4 xl:mt-6"
-          >
+          <Typography variant="body1" className="mt-3  lg:mt-4 xl:mt-6">
             Here is the site map created by focusing on crucial actions and
             features.
           </Typography>
@@ -416,10 +403,7 @@ export default function Replica() {
           </div>
 
           <Typography variant="h6">Visualizing user experience</Typography>
-          <Typography
-            variant="body1"
-            className="mt-2 text-justify xl:mb-6 xl:mt-6"
-          >
+          <Typography variant="body1" className="mt-2  xl:mb-6 xl:mt-6">
             I constructed a user flow focusing on 2 main tasks on the
             application to help me visualize users action and navigation through
             application :
@@ -437,18 +421,12 @@ export default function Replica() {
             </ul>
           </Typography>
 
-          <Typography
-            variant="body1"
-            className="mt-3 text-justify lg:mt-4 xl:mt-6"
-          >
+          <Typography variant="body1" className="mt-3  lg:mt-4 xl:mt-6">
             I also roughly created wireframe informed by user flow and site map
             for the purpose of organizing elements and achieving main tasks on
             the application.
           </Typography>
-          <Typography
-            variant="body1"
-            className="mt-2 text-justify lg:mt-4 xl:mb-6"
-          >
+          <Typography variant="body1" className="mt-2  lg:mt-4 xl:mb-6">
             You can view the wireframe on{" "}
             <Link
               href="https://www.figma.com/file/pjQteQQk66ztOFxYC5ZbEV/Project-Replica?type=design&node-id=1%3A2&mode=design&t=jvslaOhcNWWub3X0-1"
@@ -486,7 +464,7 @@ export default function Replica() {
                 </Typography>
                 <Typography
                   variant="body1"
-                  className="mt-2 text-justify text-grey-20 lg:mt-3 xl:mt-3"
+                  className="mt-2  text-grey-20 lg:mt-3 xl:mt-3"
                 >
                   The prototype aimed to be well-designed and easy-to-use app.
                   It has similar structure of regular shopping application,
@@ -497,7 +475,7 @@ export default function Replica() {
 
                 <Typography
                   variant="body1"
-                  className="mt-3 text-justify text-grey-20 lg:mt-3 xl:mt-3"
+                  className="mt-3  text-grey-20 lg:mt-3 xl:mt-3"
                 >
                   On the product page, users can see comprehensive reviews by
                   other users and user ratings, which represent how other users
@@ -520,7 +498,7 @@ export default function Replica() {
             id="workspace-design"
             className="bg-black-70 px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
           >
-            <DoubleImageCarousel images={images} />
+            <QuadImageCarousel images={images} />
           </section>
         </div>
 
