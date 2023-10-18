@@ -38,7 +38,7 @@ const images = [
 export default function Co() {
   return (
     <>
-      <main className="bg-white-10">
+      <main className="bg-[#fff]">
         <section
           id="hero"
           className="px-6 py-10 md:px-10 md:py-[80px] lg:px-[60px] lg:py-[140px] xl:m-auto xl:h-[800px] xl:max-w-[1440px] xl:px-[100px] xl:py-[172px]"
@@ -89,315 +89,327 @@ export default function Co() {
           </div>
         </section>
 
-        <section
-          id="overview"
-          className="px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
-        >
-          <div className="xl:flex xl:gap-[100px]">
-            <div className="basis-7/12">
-              <Typography variant="h6">Overview</Typography>
-              <Typography variant="body1" className="mb-5 mt-1  xl:mt-6">
-                Co. is a workspace web application designed based on idea aimed
-                to improve collaboration and productivity of online co-working
-                space. It composed of communication and productivity features
-                that will greatly enrich work performance and collaboration
-                among team members.
+        <div className="bg-white-10">
+          <section
+            id="overview"
+            className="px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
+          >
+            <div className="xl:flex xl:gap-[100px]">
+              <div className="basis-7/12">
+                <Typography variant="h6">Overview</Typography>
+                <Typography variant="body1" className="mb-5 mt-1  xl:mt-6">
+                  Co. is a workspace web application designed based on idea
+                  aimed to improve collaboration and productivity of online
+                  co-working space. It composed of communication and
+                  productivity features that will greatly enrich work
+                  performance and collaboration among team members.
+                </Typography>
+              </div>
+              <div className="flex basis-5/12 lg:mt-8 xl:mt-0">
+                <div className="me-8 md:me-10 xl:me-[100px]">
+                  <Typography variant="h6">Role</Typography>
+                  <ul className="mt-1 list-inside list-disc p-0 xl:mt-6">
+                    <li className="">
+                      <Typography variant="body1" className="inline-block">
+                        User Research
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" className="inline-block">
+                        User Experience Design
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" className="inline-block">
+                        User Interface Design
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" className="inline-block">
+                        Visual Design
+                      </Typography>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <Typography variant="h6">Tool</Typography>
+                  <ul className="mt-1 list-inside list-disc p-0 xl:mt-6">
+                    <li className="">
+                      <Typography variant="body1" className="inline-block">
+                        Figma
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" className="inline-block">
+                        Adobe Photoshop
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" className="inline-block">
+                        Adobe Illustrator
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" className="inline-block">
+                        Miro
+                      </Typography>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div className="px-6 md:px-10 lg:px-[60px]  xl:m-auto xl:max-w-[1440px] xl:px-[100px]">
+          <Divider className="border-grey-40" />
+        </div>
+
+        <div className="bg-white-10">
+          <section
+            id="problem"
+            className="px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
+          >
+            <div>
+              <Typography variant="h6">Problem</Typography>
+              <Typography variant="body1" className="mt-1  xl:mt-6">
+                The current online co-working spaces in the market doesn’t
+                adequately meet customer needs. These platforms lack the
+                essential features and intuitive interfaces required to enhance
+                collaboration effectively. As a result, users struggle to
+                maximize their productivity and teamwork potential within these
+                environments. Addressing these usability and functionality gaps
+                is vital to provide more effective and satisfying online
+                workspace experiences.
               </Typography>
             </div>
-            <div className="flex basis-5/12 lg:mt-8 xl:mt-0">
-              <div className="me-8 md:me-10 xl:me-[100px]">
-                <Typography variant="h6">Role</Typography>
-                <ul className="mt-1 list-inside list-disc p-0 xl:mt-6">
-                  <li className="">
-                    <Typography variant="body1" className="inline-block">
-                      User Research
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography variant="body1" className="inline-block">
-                      User Experience Design
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography variant="body1" className="inline-block">
-                      User Interface Design
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography variant="body1" className="inline-block">
-                      Visual Design
-                    </Typography>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <Typography variant="h6">Tool</Typography>
-                <ul className="mt-1 list-inside list-disc p-0 xl:mt-6">
-                  <li className="">
-                    <Typography variant="body1" className="inline-block">
-                      Figma
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography variant="body1" className="inline-block">
-                      Adobe Photoshop
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography variant="body1" className="inline-block">
-                      Adobe Illustrator
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography variant="body1" className="inline-block">
-                      Miro
-                    </Typography>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
 
         <div className="px-6 md:px-10 lg:px-[60px]  xl:m-auto xl:max-w-[1440px] xl:px-[100px]">
           <Divider className="border-grey-40" />
         </div>
 
-        <section
-          id="problem"
-          className="px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
-        >
-          <div>
-            <Typography variant="h6">Problem</Typography>
-            <Typography variant="body1" className="mt-1  xl:mt-6">
-              The current online co-working spaces in the market doesn’t
-              adequately meet customer needs. These platforms lack the essential
-              features and intuitive interfaces required to enhance
-              collaboration effectively. As a result, users struggle to maximize
-              their productivity and teamwork potential within these
-              environments. Addressing these usability and functionality gaps is
-              vital to provide more effective and satisfying online workspace
-              experiences.
-            </Typography>
-          </div>
-        </section>
-
-        <div className="px-6 md:px-10 lg:px-[60px]  xl:m-auto xl:max-w-[1440px] xl:px-[100px]">
-          <Divider className="border-grey-40" />
-        </div>
-
-        <section
-          id="discover"
-          className="px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
-        >
-          <Typography variant="subtitle1" className="text-[#66B2CC]">
-            DISCOVER AND EMPATHIZE
-          </Typography>
-          <Typography variant="h2">Exploring the current issue</Typography>
-          <Typography variant="body1" className="mt-2  lg:mt-4 xl:mt-6">
-            I started a secondary research to understand characteristic of
-            online co-working space by testing a number of platforms in the
-            market my self and accumulating users review of each platform to
-            cursorily explore user frustrations and challenges.
-          </Typography>
-
-          <div className="m-auto mb-5 mt-2 md:mt-3 lg:mt-5 xl:mb-[60px] xl:mt-6">
-            <Image
-              alt="Social banner"
-              src="/assets/static/images/co-working/social-banner.png"
-              width={1180}
-              height={160}
-              layout="responsive"
-            />
-          </div>
-
-          <Typography variant="h6">
-            Gathering users problem and needs
-          </Typography>
-          <Typography variant="body1" className="mt-2  xl:mt-6">
-            I started the primary research to empathize users by conducting user
-            interview through video conferencing, targeting group of 5 users,
-            ranging from 23-30 years old who have experiences in using online
-            co-working space. These are some of the interview questions.
-          </Typography>
-
-          <Typography variant="subtitle2" className="mt-4 lg:mt-6">
-            Goal : To identify users frustration and find opportunity to improve
-            online co-working space
-          </Typography>
-
-          <ul className="ms-4 mt-1 list-disc p-0">
-            <li>
-              What are the goals you want to achieve while using virtual
-              co-working space ?
-            </li>
-            <li>
-              Have you ever experienced challenges or frustration while using
-              co-working space ?
-            </li>
-            <li>
-              What are features or aspects that online co-working space need to
-              be improved ?
-            </li>
-          </ul>
-
-          <Typography variant="body1" className="mt-2 lg:mt-6">
-            You can read full user interview plan{" "}
-            <Link
-              href="https://docs.google.com/document/d/11kSaibyOJlJib6fkXA8lcCvkmL6AK_kUGhOIog4lAFs/edit?usp=sharing"
-              className="text-[#66B2CC]"
-              target="_blank"
-            >
-              here
-            </Link>
-            .
-          </Typography>
-        </section>
-
-        <div className="px-6 md:px-10 lg:px-[60px]  xl:m-auto xl:max-w-[1440px] xl:px-[100px]">
-          <Divider className="border-grey-40" />
-        </div>
-
-        <section
-          id="define"
-          className="px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
-        >
-          <Typography variant="subtitle1" className="text-[#66B2CC]">
-            DEFINE
-          </Typography>
-          <Typography variant="h2">Synthesize to define</Typography>
-          <Typography variant="body1" className="mt-2  lg:mt-4 xl:mt-6">
-            Upon collecting the data, I synthesize the interview findings and
-            transform them into an aggregated affinity diagram. This organized
-            representation aids in identifying patterns and insights from the
-            interview, facilitating a more comprehensive understanding of user
-            needs and pain points.
-          </Typography>
-
-          <div className="m-auto mb-5 mt-2 md:mt-3 lg:mt-5 xl:mb-[60px] xl:mt-6">
-            <Image
-              alt="Synthesize to define"
-              src="/assets/static/images/co-working/synthesize.png"
-              width={1180}
-              height={560}
-              layout="responsive"
-            />
-          </div>
-
-          <Typography variant="h6">
-            Identifying pain points and insights
-          </Typography>
-          <Typography variant="body1" className="mt-2  xl:mt-6">
-            After thoroughly synthesizing and analyzing the collected data, I
-            decided to construct a problem statement. This effectively
-            illustrates and clarifies the users pain points and insights,
-            providing a concise and focused representation of their key
-            challenges and needs. I finally identify 3 major pain points as
-            followings :
-          </Typography>
-
-          <div className="m-auto mt-2 md:mt-3 lg:mt-5 xl:mt-6">
-            <Image
-              alt="User pain point"
-              src="/assets/static/images/co-working/pain-point.png"
-              width={1238}
-              height={504}
-              layout="responsive"
-            />
-          </div>
-        </section>
-
-        <div className="px-6 md:px-10 lg:px-[60px]  xl:m-auto xl:max-w-[1440px] xl:px-[100px]">
-          <Divider className="border-grey-40" />
-        </div>
-
-        <section
-          id="hero"
-          className="px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
-        >
-          <Typography variant="subtitle1" className="text-[#66B2CC]">
-            IDEATE
-          </Typography>
-          <Typography variant="h2">Generating and refining ideas </Typography>
-
-          <Typography
-            variant="h6"
-            className="mt-3 md:mt-4 lg:mt-5 xl:mt-[60px]"
+        <div className="bg-white-10">
+          <section
+            id="discover"
+            className="px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
           >
-            Idea exploration and moodboard
-          </Typography>
-          <Typography variant="body1" className="mt-2  xl:mt-6">
-            While exploring idea of product structure and features, I focused on
-            a multi-featured platform approach, taking inspiration from Slack as
-            it provides a provident example of essential functionality. In terms
-            of visual design and navigation, I opt for a clean and minimalistic
-            trend to create a user-friendly and calm atmosphere.
-          </Typography>
+            <Typography variant="subtitle1" className="text-[#66B2CC]">
+              DISCOVER AND EMPATHIZE
+            </Typography>
+            <Typography variant="h2">Exploring the current issue</Typography>
+            <Typography variant="body1" className="mt-2  lg:mt-4 xl:mt-6">
+              I started a secondary research to understand characteristic of
+              online co-working space by testing a number of platforms in the
+              market my self and accumulating users review of each platform to
+              cursorily explore user frustrations and challenges.
+            </Typography>
 
-          <div className="m-auto mb-5 mt-2 md:mt-3 lg:mt-5 xl:mb-[60px] xl:mt-6">
-            <Image
-              alt="application idea"
-              src="/assets/static/images/co-working/ideate.png"
-              width={1180}
-              height={455}
-              layout="responsive"
-            />
-          </div>
+            <div className="m-auto mb-5 mt-2 md:mt-3 lg:mt-5 xl:mb-[60px] xl:mt-6">
+              <Image
+                alt="Social banner"
+                src="/assets/static/images/co-working/social-banner.png"
+                width={1180}
+                height={160}
+                layout="responsive"
+              />
+            </div>
 
-          <Typography variant="body1" className="mt-6  xl:mb-7">
-            I also conducted a competitive audit to observe and assess potential
-            of current online co-working space in the market.
-          </Typography>
+            <Typography variant="h6">
+              Gathering users problem and needs
+            </Typography>
+            <Typography variant="body1" className="mt-2  xl:mt-6">
+              I started the primary research to empathize users by conducting
+              user interview through video conferencing, targeting group of 5
+              users, ranging from 23-30 years old who have experiences in using
+              online co-working space. These are some of the interview
+              questions.
+            </Typography>
 
-          <div className="mb-[48px] mt-5 h-[75vh] w-full xl:mb-[60px]">
-            <iframe
-              src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQNsERhWYFvpM_qR0qBcS8PEi9WAN2uLAZck_Q-cih6aVfRjNpQQMIQ1xhDnMeTOspxT3fLkkDidhl3/pubhtml?widget=true&amp;headers=false"
-              className="h-full w-full"
-            ></iframe>
-          </div>
+            <Typography variant="subtitle2" className="mt-4 lg:mt-6">
+              Goal : To identify users frustration and find opportunity to
+              improve online co-working space
+            </Typography>
 
-          <Typography variant="h6">
-            Organizing contents and structure
-          </Typography>
-          <Typography variant="body1" className="mt-2  xl:mt-6">
-            After gathering and listing ideas, I started to creating information
-            architecture of webpage and working space page informed by previous
-            research and defined problem. The working space interface and
-            structure focuses on :
-            <ul className="ms-4 mt-1 list-disc p-0 xl:mt-2">
-              <li>Intuitive and user-friendly interface</li>
-              <li>Effective co-working features</li>
-              <li>Productive working atmosphere</li>
+            <ul className="ms-4 mt-1 list-disc p-0">
+              <li>
+                What are the goals you want to achieve while using virtual
+                co-working space ?
+              </li>
+              <li>
+                Have you ever experienced challenges or frustration while using
+                co-working space ?
+              </li>
+              <li>
+                What are features or aspects that online co-working space need
+                to be improved ?
+              </li>
             </ul>
-          </Typography>
 
-          <div className="m-auto mb-5 mt-2 md:mt-3 lg:mt-5 xl:mb-[60px] xl:mt-6">
-            <Image
-              alt="Organizing structure"
-              src="/assets/static/images/co-working/mindmap.png"
-              width={1180}
-              height={503}
-              layout="responsive"
-            />
-          </div>
+            <Typography variant="body1" className="mt-2 lg:mt-6">
+              You can read full user interview plan{" "}
+              <Link
+                href="https://docs.google.com/document/d/11kSaibyOJlJib6fkXA8lcCvkmL6AK_kUGhOIog4lAFs/edit?usp=sharing"
+                className="text-[#66B2CC]"
+                target="_blank"
+              >
+                here
+              </Link>
+              .
+            </Typography>
+          </section>
+        </div>
 
-          <Typography variant="body1" className="mt-2 ">
-            Then I created wireframe to visualize product website and workspace
-            interface and user tasks throughout the product to ensure that the
-            wireframes were aligned with user needs and the overall product
-            vision.
-          </Typography>
+        <div className="px-6 md:px-10 lg:px-[60px]  xl:m-auto xl:max-w-[1440px] xl:px-[100px]">
+          <Divider className="border-grey-40" />
+        </div>
 
-          <div className="m-auto mt-2 md:mt-3 lg:mt-5 xl:mt-6">
-            <Image
-              alt="Organizing structure"
-              src="/assets/static/images/co-working/lo-fi-img.png"
-              width={1180}
-              height={695}
-              layout="responsive"
-            />
-          </div>
-        </section>
+        <div className="bg-white-10">
+          <section
+            id="define"
+            className="px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
+          >
+            <Typography variant="subtitle1" className="text-[#66B2CC]">
+              DEFINE
+            </Typography>
+            <Typography variant="h2">Synthesize to define</Typography>
+            <Typography variant="body1" className="mt-2  lg:mt-4 xl:mt-6">
+              Upon collecting the data, I synthesize the interview findings and
+              transform them into an aggregated affinity diagram. This organized
+              representation aids in identifying patterns and insights from the
+              interview, facilitating a more comprehensive understanding of user
+              needs and pain points.
+            </Typography>
+
+            <div className="m-auto mb-5 mt-2 md:mt-3 lg:mt-5 xl:mb-[60px] xl:mt-6">
+              <Image
+                alt="Synthesize to define"
+                src="/assets/static/images/co-working/synthesize.png"
+                width={1180}
+                height={560}
+                layout="responsive"
+              />
+            </div>
+
+            <Typography variant="h6">
+              Identifying pain points and insights
+            </Typography>
+            <Typography variant="body1" className="mt-2  xl:mt-6">
+              After thoroughly synthesizing and analyzing the collected data, I
+              decided to construct a problem statement. This effectively
+              illustrates and clarifies the users pain points and insights,
+              providing a concise and focused representation of their key
+              challenges and needs. I finally identify 3 major pain points as
+              followings :
+            </Typography>
+
+            <div className="m-auto mt-2 md:mt-3 lg:mt-5 xl:mt-6">
+              <Image
+                alt="User pain point"
+                src="/assets/static/images/co-working/pain-point.png"
+                width={1238}
+                height={504}
+                layout="responsive"
+              />
+            </div>
+          </section>
+        </div>
+
+        <div className="px-6 md:px-10 lg:px-[60px]  xl:m-auto xl:max-w-[1440px] xl:px-[100px]">
+          <Divider className="border-grey-40" />
+        </div>
+
+        <div className="bg-white-10">
+          <section
+            id="hero"
+            className="px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
+          >
+            <Typography variant="subtitle1" className="text-[#66B2CC]">
+              IDEATE
+            </Typography>
+            <Typography variant="h2">Generating and refining ideas </Typography>
+
+            <Typography
+              variant="h6"
+              className="mt-3 md:mt-4 lg:mt-5 xl:mt-[60px]"
+            >
+              Idea exploration and moodboard
+            </Typography>
+            <Typography variant="body1" className="mt-2  xl:mt-6">
+              While exploring idea of product structure and features, I focused
+              on a multi-featured platform approach, taking inspiration from
+              Slack as it provides a provident example of essential
+              functionality. In terms of visual design and navigation, I opt for
+              a clean and minimalistic trend to create a user-friendly and calm
+              atmosphere.
+            </Typography>
+
+            <div className="m-auto mb-5 mt-2 md:mt-3 lg:mt-5 xl:mb-[60px] xl:mt-6">
+              <Image
+                alt="application idea"
+                src="/assets/static/images/co-working/ideate.png"
+                width={1180}
+                height={455}
+                layout="responsive"
+              />
+            </div>
+
+            <Typography variant="body1" className="mt-6  xl:mb-7">
+              I also conducted a competitive audit to observe and assess
+              potential of current online co-working space in the market.
+            </Typography>
+
+            <div className="mb-[48px] mt-5 h-[75vh] w-full xl:mb-[60px]">
+              <iframe
+                src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQNsERhWYFvpM_qR0qBcS8PEi9WAN2uLAZck_Q-cih6aVfRjNpQQMIQ1xhDnMeTOspxT3fLkkDidhl3/pubhtml?widget=true&amp;headers=false"
+                className="h-full w-full"
+              ></iframe>
+            </div>
+
+            <Typography variant="h6">
+              Organizing contents and structure
+            </Typography>
+            <Typography variant="body1" className="mt-2  xl:mt-6">
+              After gathering and listing ideas, I started to creating
+              information architecture of webpage and working space page
+              informed by previous research and defined problem. The working
+              space interface and structure focuses on :
+              <ul className="ms-4 mt-1 list-disc p-0 xl:mt-2">
+                <li>Intuitive and user-friendly interface</li>
+                <li>Effective co-working features</li>
+                <li>Productive working atmosphere</li>
+              </ul>
+            </Typography>
+
+            <div className="m-auto mb-5 mt-2 md:mt-3 lg:mt-5 xl:mb-[60px] xl:mt-6">
+              <Image
+                alt="Organizing structure"
+                src="/assets/static/images/co-working/mindmap.png"
+                width={1180}
+                height={503}
+                layout="responsive"
+              />
+            </div>
+
+            <Typography variant="body1" className="mt-2 ">
+              Then I created wireframe to visualize product website and
+              workspace interface and user tasks throughout the product to
+              ensure that the wireframes were aligned with user needs and the
+              overall product vision.
+            </Typography>
+
+            <div className="m-auto mt-2 md:mt-3 lg:mt-5 xl:mt-6">
+              <Image
+                alt="Organizing structure"
+                src="/assets/static/images/co-working/lo-fi-img.png"
+                width={1180}
+                height={695}
+                layout="responsive"
+              />
+            </div>
+          </section>
+        </div>
 
         <div className="bg-black-80">
           <section
@@ -564,10 +576,10 @@ export default function Co() {
           </section>
         </div>
 
-        <div className="bg-black-70">
+        <div className="bg-black-80">
           <section
             id="lesson-learned"
-            className="bg-black-70 px-6 py-[60px] md:px-10 md:py-[80px] lg:px-[60px] lg:py-[120px] xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[160px]"
+            className="bg-black-80 px-6 py-[60px] md:px-10 md:py-[80px] lg:px-[60px] lg:py-[120px] xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[160px]"
           >
             <div className="flex items-center gap-14">
               <div className="lg:basis-2/3">
@@ -581,7 +593,8 @@ export default function Co() {
                     and pain points of product target audience plays vital role
                     for product designing. Sketchy planning can mislead your
                     entire design direction, resulting in design that doesn’t
-                    meet users need <br/>and problem.
+                    meet users need <br />
+                    and problem.
                   </li>
                   <li>
                     Optimization for mobile : In the context of web application

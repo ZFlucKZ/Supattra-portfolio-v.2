@@ -32,7 +32,7 @@ export default function Navbar({ isWhite = false }: NavbarTypes) {
             isWhite ? "bg-black-80" : "bg-[transparent]"
           }`}
         >
-          <ul className="m-auto flex max-w-[1440px] list-none flex-row  px-[60px] pt-10">
+          <ul className="m-auto flex max-w-[1440px] list-none flex-row  px-6 pt-10 md:px-10 lg:px-[60px] xl:m-auto xl:px-[100px]">
             <li className="me-auto">
               <Link href="/" className="inline-block no-underline">
                 <span
