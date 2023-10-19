@@ -50,7 +50,10 @@ export default function RootLayout({
             <body
               className={`${monaSans.className} relative -z-50 overflow-x-hidden bg-[#fff]`}
             >
-              <Navbar isWhite={pathname == "/warmlight"} />
+              <Navbar
+                isWhite={pathname == "/warmlight"}
+                isWhite10={pathname == "/"}
+              />
               {children}
               <Footer />
             </body>

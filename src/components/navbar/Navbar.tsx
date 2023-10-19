@@ -9,7 +9,10 @@ import Link from "next/link";
 
 import classNames from "classnames";
 
-export default function Navbar({ isWhite = false }: NavbarTypes) {
+export default function Navbar({
+  isWhite = false,
+  isWhite10 = false,
+}: NavbarTypes) {
   const size = useWindowSize();
 
   return (
@@ -21,6 +24,7 @@ export default function Navbar({ isWhite = false }: NavbarTypes) {
             {
               "bg-black-80": isWhite,
               "bg-[transparent]": !isWhite,
+              "bg-white-10": !isWhite10,
             },
           )}
         >
@@ -29,7 +33,11 @@ export default function Navbar({ isWhite = false }: NavbarTypes) {
       ) : (
         <div
           className={`relative z-10 ${
-            isWhite ? "bg-black-80" : "bg-[transparent]"
+            isWhite
+              ? "bg-black-80"
+              : isWhite10
+              ? "bg-white-10"
+              : "bg-[transparent]"
           }`}
         >
           <ul className="m-auto flex max-w-[1440px] list-none flex-row  px-6 pt-10 md:px-10 lg:px-[60px] xl:m-auto xl:px-[100px]">

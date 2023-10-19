@@ -560,10 +560,10 @@ export default function Co() {
           </section>
         </div>
 
-        <div className="bg-black-80">
+        <div className="bg-black-70">
           <section
             id="workspace-design"
-            className="bg-black-80 px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
+            className="bg-black-70 px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-12 xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[60px]"
           >
             <Typography
               variant="h6"

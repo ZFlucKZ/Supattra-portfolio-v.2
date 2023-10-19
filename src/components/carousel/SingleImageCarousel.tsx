@@ -42,7 +42,7 @@ function SingleImageCarousel({ images }) {
         margin: "auto",
       }}
     >
-      <AutoPlaySwipeableViews
+      <SwipeableViews
         axis={theme.direction === "rtl" ? "x-reverse" : "x"}
         index={activeStep}
         onChangeIndex={handleStepChange}
@@ -66,10 +66,10 @@ function SingleImageCarousel({ images }) {
             ) : null}
           </div>
         ))}
-      </AutoPlaySwipeableViews>
+      </SwipeableViews>
 
       <MobileStepper
-        className="bg-black-70"
+        className="bg-grey-60"
         steps={maxSteps}
         position="static"
         activeStep={activeStep}
@@ -78,7 +78,7 @@ function SingleImageCarousel({ images }) {
             size="small"
             onClick={handleNext}
             disabled={activeStep === maxSteps - 1}
-            className="text-white-10 disabled:text-grey-60"
+            className="text-white-10 disabled:text-grey-50"
           >
             Next
             {theme.direction === "rtl" ? (
@@ -93,7 +93,7 @@ function SingleImageCarousel({ images }) {
             size="small"
             onClick={handleBack}
             disabled={activeStep === 0}
-            className="text-white-10 disabled:text-grey-60"
+            className="text-white-10 disabled:text-grey-50"
           >
             {theme.direction === "rtl" ? (
               <KeyboardArrowRight className="" />

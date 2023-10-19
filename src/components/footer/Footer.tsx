@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="mb-5 flex items-center justify-between">
           <div>
             <Link href="/">
-              <div className="max-w-[60px] md:max-w-[70px] lg:md:max-w-[80px] xl:max-w-[120px]">
+              <div className="w-[60px] md:w-[70px] lg:md:w-[80px] xl:w-[98px]">
                 <Image
                   alt="Supattra Chansawad logo"
                   src="/assets/static/logo/Web-logo-White.svg"
@@ -27,12 +27,12 @@ export default function Footer() {
             </Link>
           </div>
           <div className="flex items-center gap-5">
-            <Typography variant="subtitle1" className=" text-white-10">
-              CASE STUDY
-            </Typography>
             <div className="flex items-center gap-3">
-              <Link href="/replica" className="decoration-white-10">
-                <Typography variant="body2" className=" text-white-10">
+              <Link
+                href="/replica"
+                className="decoration-white-10 decoration-1 underline-offset-[6px]"
+              >
+                <Typography variant="body2" className="text-white-10">
                   REPLICA
                 </Typography>
               </Link>
@@ -41,7 +41,10 @@ export default function Footer() {
                 flexItem
                 className="border-x-[1px] border-grey-40"
               />
-              <Link href="/co-working" className="decoration-white-10">
+              <Link
+                href="/co-working"
+                className="decoration-white-10 decoration-1 underline-offset-[6px]"
+              >
                 <Typography variant="body2" className=" text-white-10">
                   CO.
                 </Typography>
@@ -51,7 +54,10 @@ export default function Footer() {
                 flexItem
                 className="border-x-[1px] border-grey-40"
               />
-              <Link href="/warmlight" className="decoration-white-10">
+              <Link
+                href="/warmlight"
+                className="decoration-white-10 decoration-1 underline-offset-[6px]"
+              >
                 <Typography variant="body2" className="text-white-10">
                   WARMLIGHT
                 </Typography>

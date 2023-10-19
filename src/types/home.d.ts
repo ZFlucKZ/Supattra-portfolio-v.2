@@ -12,4 +12,5 @@ interface Inputs {
 
 interface NavbarTypes {
   isWhite?: boolean;
+  isWhite10?: boolean;
 }

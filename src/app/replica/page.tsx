@@ -61,9 +61,8 @@ export default function Replica() {
                 />
               </div>
               <p className="text-grey-70 m-0 mb-3 whitespace-nowrap text-center text-body-2 font-medium md:text-body-1 lg:mb-0 lg:text-start xl:text-paragraph-2">
-                A scented candle shopping application that helps users
-                <br />
-                buy products effortlessly
+                An application that improves users shopping <br />
+                experiences by offering alternatives
               </p>
             </div>
 
@@ -522,6 +521,7 @@ export default function Replica() {
                   On the product page, users can see comprehensive reviews by
                   other users and user ratings, which represent how other users
                   perceive the alternative product. It will assist users to make
+                  <br />
                   informed decision.
                 </Typography>
               </div>
@@ -570,6 +570,116 @@ export default function Replica() {
                 src="/assets/static/images/replica/style-component.png"
                 width={1195}
                 height={634}
+                layout="responsive"
+              />
+            </div>
+          </section>
+        </div>
+
+        <div className="bg-black-80">
+          <section
+            id="test"
+            className="bg-black-80 px-6 py-10 md:px-10 md:py-[60px] lg:px-[60px] lg:py-[80px] xl:m-auto xl:max-w-[1440px] xl:px-[100px] xl:py-[100px]"
+          >
+            <Typography variant="subtitle1" className="text-[#FE95AB]">
+              TEST
+            </Typography>
+            <Typography variant="h2" className="text-white-10">
+              Conducting a usability testing
+            </Typography>
+            <Typography
+              variant="body1"
+              className="mb-4 mt-4 text-grey-20 xl:mb-6 xl:mt-6"
+            >
+              I conducted a{" "}
+              <span className="font-semibold">
+                remote unmoderated usability testing
+              </span>{" "}
+              with 4 participants on{" "}
+              <span className="font-semibold">Useberry</span>, testing usability
+              of 2 main features of the application :
+              <ul className="ms-3 mt-1 list-decimal p-0 xl:mt-2">
+                <li>
+                  <span className="font-semibold">
+                    Search for alternative product by search feature{" "}
+                  </span>
+                </li>
+                <li>
+                  <span className="font-semibold">
+                    Search for alternative product by AI.{" "}
+                  </span>
+                </li>
+              </ul>
+            </Typography>
+            <div className="mb-10 w-[280px] md:w-[500px] lg:w-[600px] xl:mb-[60px] xl:w-[680px]">
+              <Image
+                alt="UseBerry Image"
+                src="/assets/static/images/replica/useberry.png"
+                width={159}
+                height={82}
+                layout="responsive"
+              />
+            </div>
+
+            <Typography variant="h6" className="text-grey-20">
+              Observation from session recording
+            </Typography>
+            <Typography
+              variant="body1"
+              className="mb-6  mt-2 text-grey-20 xl:mt-6"
+            >
+              The results show that all of users completed designated tasks
+              without struggling and also on time. However after thoroughly
+              observing test session recordings, I found out that{" "}
+              <span className="font-semibold">
+                2 out of 4 participants took some times to find search by AI
+                menu on the navigation bar
+              </span>
+              . Here is the partial session recording from one of the
+              participant.
+            </Typography>
+
+            <div className="relative aspect-[1066/600] w-[300px] md:w-[600px] lg:w-[900px] xl:w-[1066px]">
+              <iframe
+                src="https://player.vimeo.com/video/875143220?badge=0&amp;autopause=0&amp;quality_selector=1&amp;progress_bar=1&amp;player_id=0&amp;app_id=58479"
+                //@ts-ignore
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                // style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                }}
+              ></iframe>
+            </div>
+
+            <Typography
+              variant="h6"
+              className="mt-10 text-grey-20 xl:mt-[60px]"
+            >
+              Decision on design modification
+            </Typography>
+            <Typography
+              variant="body1"
+              className="mb-4 mt-2 text-grey-20 xl:mb-6 xl:mt-6"
+            >
+              According to my observation, the problem possibly derives from{" "}
+              <span className="font-semibold">
+                lack of intuitiveness and indication of the AI menu icon.
+              </span>{" "}
+              Therefore, I decided to change said icon by changing it appearance
+              to be more recognizable as a AI feature.
+            </Typography>
+
+            <div className="mt-2 max-w-[624px] md:mt-3  lg:mt-5 xl:mt-6">
+              <Image
+                alt="User problem"
+                src="/assets/static/images/replica/usability-testing.png"
+                width={1050}
+                height={393}
                 layout="responsive"
               />
             </div>
