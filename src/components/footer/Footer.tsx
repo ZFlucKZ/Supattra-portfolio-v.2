@@ -92,7 +92,7 @@ export default function Footer() {
         </div>
         <Divider className="mb-1 border-grey-20" />
         <Typography variant="body2" className="text-body-2 text-white-10">
-          © Supattra 2023 All rights reserved
+          © Supattra Chansawad 2023 All rights reserved.
         </Typography>
       </div>
     </section>

@@ -60,9 +60,9 @@ export default function Replica() {
                   layout="responsive"
                 />
               </div>
-              <p className="text-grey-70 m-0 mb-3 whitespace-nowrap text-center text-body-2 font-medium md:text-body-1 lg:mb-0 lg:text-start xl:text-paragraph-2">
+              <p className="text-grey-70 m-0 mb-3 whitespace-nowrap text-center text-body-2 font-semibold md:text-body-1 lg:mb-0 lg:text-start xl:text-paragraph-2">
                 An application that improves users shopping <br />
-                experiences by offering alternatives
+                experiences by offering alternative
               </p>
             </div>
 
@@ -98,8 +98,8 @@ export default function Replica() {
                 <Typography variant="body1" className="mb-5 mt-1  xl:mt-6">
                   In some circumstance, customers may not get the exact product
                   they desired, but they can still find a solution that meets
-                  their needs. Replica, the alternatives recommender application
-                  that helps users simply find alternatives products.
+                  their needs. Replica, the alternative recommender application
+                  that helps users simply find alternative products.
                 </Typography>
               </div>
               <div className="flex basis-5/12 lg:mt-8 xl:mt-0">
@@ -189,7 +189,7 @@ export default function Replica() {
                 <span className="font-semibold">goal</span> of this project to
                 be :{" "}
                 <span className="font-semibold">
-                  Improving users shopping experiences by offering alternatives
+                  Improving users shopping experiences by offering alternative
                   product
                 </span>
                 .
@@ -299,9 +299,9 @@ export default function Replica() {
 
             <Typography variant="body1" className="">
               With the total of 10 responses, We can observe that 60%
-              respondents are willing to buy alternatives product and the other
+              respondents are willing to buy alternative product and the other
               40% are considering to do so. The result indicates that most users
-              are interested in alternatives.
+              are interested in alternative.
             </Typography>
           </section>
         </div>
@@ -324,8 +324,7 @@ export default function Replica() {
             <Typography variant="body1" className="mt-2  lg:mt-4 xl:mt-6">
               After gathering all of the data, I synthesize it to create 2
               personas, representing Jane, a user who will definitely buy
-              alternatives product, and Peter, a users who is uncertain about
-              it.
+              alternative product, and Peter, a users who is uncertain about it.
             </Typography>
 
             <div className="m-auto mb-5 mt-2 flex flex-wrap items-center justify-center gap-2 bg-[#FCD970] p-5 md:mb-6 md:mt-3 md:gap-4 md:py-8 lg:mt-6 lg:flex-nowrap xl:mb-[60px] xl:mt-6 xl:gap-8">
@@ -418,12 +417,12 @@ export default function Replica() {
             <Typography variant="body1" className="mt-2  xl:mt-6">
               After brainstorming and sketching, I decided to go with an idea of{" "}
               <span className="font-semibold">
-                <i>“a community-based alternatives recommender application”</i>
+                <i>“a community-based alternative recommender application”</i>
               </span>
               &nbsp; to provide a more efficient and way for users to find
-              alternatives products. The application allow users to rate and
-              review alternatives, which would help other users make informed
-              decisions. I also utilize AI as an extensive alternatives finding
+              alternative products. The application allow users to rate and
+              review alternative, which would help other users make informed
+              decisions. I also utilize AI as an extensive alternative finding
               feature.
             </Typography>
 
@@ -450,12 +449,12 @@ export default function Replica() {
               <ul className="ms-3 mt-1 list-decimal p-0 xl:mt-2">
                 <li>
                   <span className="font-semibold">
-                    Searching for alternatives product by search feature.
+                    Searching for alternative product by search feature.
                   </span>
                 </li>
                 <li>
                   <span className="font-semibold">
-                    Searching for alternatives product by AI feature.
+                    Searching for alternative product by AI feature.
                   </span>
                 </li>
               </ul>
@@ -510,7 +509,7 @@ export default function Replica() {
                   The prototype aimed to be well-designed and easy-to-use app.
                   It has similar structure of regular shopping application,
                   establishing intuitiveness for users. Users can simply type a
-                  product name to find alternatives recommended buy other users
+                  product name to find alternative recommended buy other users
                   ,or simply have a recommendation from AI.
                 </Typography>
 

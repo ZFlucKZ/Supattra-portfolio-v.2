@@ -59,7 +59,7 @@ export default function Co() {
                 flexItem
                 className="border-x-[1px]"
               />
-              <p className="m-0 text-body-2 font-semibold text-grey-60 md:text-body-1 xl:text-paragraph-2">
+              <p className="text-grey-70 m-0 text-body-2 font-semibold md:text-body-1 xl:text-paragraph-2">
                 A co-working space web <br />
                 application that enhances your <br />
                 collaboration and productivity
@@ -175,12 +175,12 @@ export default function Co() {
               <Typography variant="body1" className="mt-1  xl:mt-6">
                 The current online co-working spaces in the market doesn’t
                 adequately meet customer needs. These platforms lack the
-                essential features and intuitive interfaces required to enhance
-                collaboration effectively. As a result, users struggle to
-                maximize their productivity and teamwork potential within these
-                environments. Addressing these usability and functionality gaps
-                is vital to provide more effective and satisfying online
-                workspace experiences.
+                essential components required to enhance work performance on the
+                platform. As a result, users struggle to maximize their
+                productivity and teamwork potential within these environments.
+                Addressing these usability and functionality gaps is vital to
+                provide more effective and satisfying online workspace
+                experiences.
               </Typography>
             </div>
           </section>

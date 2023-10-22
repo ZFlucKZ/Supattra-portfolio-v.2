@@ -77,10 +77,9 @@ export default function Warmlight() {
                     layout="responsive"
                   />
                 </div>
-                <p className="m-0 mb-3 whitespace-nowrap text-center text-body-2 font-medium text-grey-20 md:text-body-1 lg:mb-0 lg:text-start xl:text-paragraph-2">
-                  A scented candle shopping application that helps users
-                  <br />
-                  buy products effortlessly
+                <p className="m-0 mb-3 whitespace-nowrap text-center text-body-2 font-semibold text-grey-20 md:text-body-1 lg:mb-0 lg:text-start xl:text-paragraph-2">
+                  A scented candle shopping application that <br />
+                  helps users buy products effortlessly
                 </p>
               </div>
 
