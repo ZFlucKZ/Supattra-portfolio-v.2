@@ -59,7 +59,10 @@ function QuadImageCarousel({ images }) {
       >
         {/*@ts-ignore*/}
         {images.map((step, index) => (
-          <div className="flex h-full gap-2 bg-grey-60 p-3" key={index.label}>
+          <div
+            className="flex h-full gap-2 bg-grey-60 p-4 lg:gap-3 lg:p-8"
+            key={index.label}
+          >
             <div className="basis-1/4">
               {Math.abs(activeStep - index) <= 2 ? (
                 <Box

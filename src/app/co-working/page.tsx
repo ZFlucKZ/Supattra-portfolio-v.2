@@ -382,13 +382,15 @@ export default function Co() {
               </ul>
             </Typography>
 
-            <div className="m-auto mb-5 mt-2 md:mt-3 lg:mt-5 xl:mb-[60px] xl:mt-6">
+            <div className="m-auto mb-5 mt-2 max-w-[1180px] md:mt-3 lg:mt-5 xl:mb-[60px] xl:mt-6">
               <Image
                 alt="Organizing structure"
                 src="/assets/static/images/co-working/mindmap.png"
                 width={1180}
                 height={503}
                 layout="responsive"
+                priority={true}
+                unoptimized={true}
               />
             </div>
 
@@ -475,12 +477,12 @@ export default function Co() {
                   >
                     Home page
                   </Typography>
-                  <div className="m-auto mb-2 mt-2 lg:mb-6">
+                  <div className="m-auto mb-2 mt-2 max-w-[550px] lg:mb-6">
                     <Image
                       alt="Website Design - 1"
                       src="/assets/static/images/co-working/design-1.png"
                       width={550}
-                      height={1329}
+                      height={1329.54}
                       layout="responsive"
                     />
                   </div>
@@ -488,7 +490,7 @@ export default function Co() {
                 <div>
                   <Typography
                     variant="subtitle2"
-                    className="text-center text-body-1 text-grey-20"
+                    className="max-w-[550px] text-center text-body-1 text-grey-20"
                   >
                     Workspace page
                   </Typography>
@@ -507,11 +509,11 @@ export default function Co() {
                 <div>
                   <Typography
                     variant="subtitle2"
-                    className="text-center text-body-1 text-grey-20"
+                    className=" text-center text-body-1 text-grey-20"
                   >
                     Feature page
                   </Typography>
-                  <div className="m-auto mb-2 mt-2 lg:mb-6">
+                  <div className="m-auto mb-2 mt-2 max-w-[550px] lg:mb-6">
                     <Image
                       alt="Website Design - 3"
                       src="/assets/static/images/co-working/design-3.png"
@@ -528,12 +530,12 @@ export default function Co() {
                   >
                     Contact page
                   </Typography>
-                  <div className="m-auto mb-2 mt-2 lg:mb-6">
+                  <div className="m-auto mb-2 mt-2 max-w-[550px] lg:mb-6">
                     <Image
                       alt="Website Design - 4"
                       src="/assets/static/images/co-working/design-4.png"
                       width={550}
-                      height={503}
+                      height={504}
                       layout="responsive"
                     />
                   </div>
@@ -545,7 +547,7 @@ export default function Co() {
                   >
                     Login page
                   </Typography>
-                  <div className="m-auto mt-2">
+                  <div className="m-auto mt-2 max-w-[550px]">
                     <Image
                       alt="Website Design - 5"
                       src="/assets/static/images/co-working/design-5.png"

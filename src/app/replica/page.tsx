@@ -380,16 +380,17 @@ export default function Replica() {
 
             <Typography variant="h6">Prioritizing the main problem</Typography>
             <Typography variant="body1" className="mt-2  xl:mt-6">
-              During this phrase, There are several of problem statements
-              derived from previously synthesized information. After listing and
-              analyzing, I decided to prioritize the most common problem that
-              majority of users encounter.
+              During this phrase, There are several of problem derived from
+              previously synthesized information. After listing and analyzing, I
+              decided to prioritize the most common problem that majority of
+              users encounter by create How might we statement to be the main
+              question of my design.
             </Typography>
 
-            <div className="m-auto mb-5 mt-2 max-w-[1050px] md:mt-3 lg:mt-5  xl:mt-6">
+            <div className="m-auto mb-5 mt-2 max-w-[666px] md:mt-3  lg:mt-5 xl:mt-6">
               <Image
                 alt="User problem"
-                src="/assets/static/images/replica/problem.png"
+                src="/assets/static/images/replica/how-might-we.png"
                 width={1050}
                 height={393}
                 layout="responsive"
