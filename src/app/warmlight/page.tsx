@@ -297,8 +297,8 @@ export default function Warmlight() {
             promotion.
           </Typography>
 
-          <div className="m-auto mb-5 mt-2 flex flex-wrap items-center justify-center gap-2 bg-grey-40 p-5 md:mb-6 md:mt-3 md:gap-4 md:py-8 lg:mt-6 lg:flex-nowrap xl:mt-6 xl:gap-8 ">
-            <div className="min-w-[250px] max-w-[561px] md:w-[400px] lg:w-[500px] xl:w-[561px]">
+          <div className="m-auto mb-5 mt-2 flex flex-wrap items-center justify-center gap-2 md:mb-6 md:mt-3 md:gap-4 md:py-8 lg:mt-6 lg:flex-nowrap xl:mt-6 xl:gap-8 ">
+            <div className="min-w-[250px] md:w-[400px] lg:w-[500px] xl:w-auto">
               <Image
                 alt="User Profile - 1"
                 src="/assets/static/images/warmlight/user-1.png"
@@ -307,7 +307,7 @@ export default function Warmlight() {
                 layout="responsive"
               />
             </div>
-            <div className="min-w-[250px] max-w-[561px] md:w-[400px] lg:w-[500px] xl:w-[561px]">
+            <div className="min-w-[250px] md:w-[400px] lg:w-[500px] xl:w-auto">
               <Image
                 alt="User Profile - 2"
                 src="/assets/static/images/warmlight/user-2.png"

@@ -328,7 +328,7 @@ export default function Replica() {
             </Typography>
 
             <div className="m-auto mb-5 mt-2 flex flex-wrap items-center justify-center gap-2 bg-[#FCD970] p-5 md:mb-6 md:mt-3 md:gap-4 md:py-8 lg:mt-6 lg:flex-nowrap xl:mb-[60px] xl:mt-6 xl:gap-8">
-              <div className="min-w-[250px] max-w-[524px] xl:w-[524px]">
+              <div className="min-w-[250px] max-w-[524px] lg:w-[560px] lg:max-w-none">
                 <Image
                   alt="User Profile - 1"
                   src="/assets/static/images/replica/user-1.png"
@@ -337,7 +337,7 @@ export default function Replica() {
                   layout="responsive"
                 />
               </div>
-              <div className="min-w-[250px] max-w-[524px] xl:w-[524px]">
+              <div className="min-w-[250px] max-w-[524px] lg:w-[560px] lg:max-w-none">
                 <Image
                   alt="User Profile - 2"
                   src="/assets/static/images/replica/user-2.png"
@@ -358,7 +358,7 @@ export default function Replica() {
             </Typography>
 
             <div className="m-auto mb-5 mt-2 flex flex-wrap items-center justify-center gap-2 bg-[#AAD4FC] p-5 md:mb-6 md:mt-3 md:gap-4 md:py-8 lg:mt-5 lg:flex-nowrap xl:mb-[60px] xl:mt-6 xl:gap-8">
-              <div className="min-w-[250px] max-w-[463px] xl:w-[463px]">
+              <div className="min-w-[250px] max-w-[463px] lg:max-w-none xl:w-auto">
                 <Image
                   alt="User tasks - 1"
                   src="/assets/static/images/replica/user-task-1.png"
@@ -367,7 +367,7 @@ export default function Replica() {
                   layout="responsive"
                 />
               </div>
-              <div className="min-w-[250px] max-w-[463px] xl:w-[463px]">
+              <div className="min-w-[250px] max-w-[463px] lg:max-w-none xl:w-auto">
                 <Image
                   alt="User tasks - 2"
                   src="/assets/static/images/replica/user-task-2.png"
